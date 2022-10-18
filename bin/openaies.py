@@ -168,7 +168,7 @@ class Algo(EvoAlgo):
                 )  # normalization data is collected during the post-evaluation of the best sample of he previous generation
                 eval_rews, eval_length = self.policy.rollout(
                     self.policy.ntrials,
-                    seed=(self.seed + (self.cgen * self.batchSize) + b),
+                    seed=(self.seed + (self.cgen * self.batchSize) + b), actual_Step=self.steps, maxmstep=self.maxsteps
                 )
                 self.samplefitness[b * 2 + bb] = eval_rews
                 self.steps += eval_length
@@ -287,8 +287,9 @@ class Algo(EvoAlgo):
                 self.nparams,
             )
         )
-
+        #maxsteps == maxmsteps
         while self.steps < self.maxsteps:
+
 
             self.evaluate()  # evaluate samples
 
