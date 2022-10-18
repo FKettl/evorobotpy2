@@ -321,7 +321,7 @@ class BulletPolicy(Policy):
 # create a new observation vector each step, consequently we need to pass the pointer to evonet each step
 # Use renderWorld to show the activation of neurons
 class GymPolicy(Policy):
-    def __init__(self, env, filename, seed, test, linear_coefficient=None, initial_max=None, final_max=None):
+    def __init__(self, env, filename, seed, test):
         self.ninputs = env.observation_space.shape[
             0
         ]  # only works for problems with continuous observation space
@@ -329,12 +329,9 @@ class GymPolicy(Policy):
             0
         ]  # only works for problems with continuous action space
         Policy.__init__(self, env, filename, seed, test)
-        self.linear_coefficient = linear_coefficient
-        self.initial_max=None
-        self.final_max=None
 
     def rollout(
-        self, ntrials, render=False, seed=None, actual_Step=None, maxmstep=None
+        self, ntrials, render=False, seed=None
     ):  # evaluate the policy for one or more episodes
         rews = 0.0  # summed rewards
         steps = 0  # step performed
@@ -352,12 +349,6 @@ class GymPolicy(Policy):
             self.nn.seed(
                 seed
             )  # set the seed of evonet that impacts on the noise eventually added to the activation of the neurons
-        reward_list = [] # Felipe Kettl
-        linear_coefficient = self.linear_coefficient
-        initial_coefficient = 100
-        final_coefficient = 0
-        initial_max = self.initial_max
-        final_max = self.final_max
         for trial in range(ntrials):
             self.ob = (
                 self.env.reset()
@@ -375,9 +366,6 @@ class GymPolicy(Policy):
                 )  # perform a simulation step
                 rew += r
                 t += 1
-                # TODO:
-                # Use T as a ''phase'', with each of those phases changing the way the reward is calculated
-                # Set the different ways of calculating the reward, ex
                 if self.test > 0:
                     if self.test == 1:
                         self.env.render()
@@ -391,11 +379,7 @@ class GymPolicy(Policy):
                 print("Trial %d Fit %.2f Steps %d " % (trial, rew, t))
             steps += t
             rews += rew
-            reward_list.append(rew)
-        #rews /= ntrials  # Normalize reward by the number of trials
-        phase = math.trunc(roundstep*10/maxmstep)
-        print(phase)
-        rews = 
+        rews /= ntrials  # Normalize reward by the number of trials
         if self.test > 0 and ntrials > 1:
             print("Average Fit %.2f Steps %.2f " % (rews, steps / float(ntrials)))
         return rews, steps

@@ -17,6 +17,7 @@ import numpy as np
 import configparser
 import time
 import sys
+import math
 
 class Policy(object):
     def __init__(self, env, fileini, seed, test):
@@ -50,7 +51,9 @@ class Policy(object):
         self.wrange = 1.0    # weight range, used in uniform initialization only
         self.low = -1.0      # mimimum activation
         self.high = 1.0      # maximum activation
-        
+        self.stage = 0       # stage of the total experiment (0 to 9)
+        self.linear_coefficient = 0   # linear coefficient for the fitness_weight change each stage
+        self.weight_change_type = '' # The strategy to changing weights over stages ex: 'min_max' = decrease min, increase max
         # Read configuration file
         self.readConfig()
         # Display info
@@ -182,7 +185,13 @@ class Policy(object):
                 found = 1
             if (o == "wrange"):
                 self.wrange = config.getint("POLICY","wrange")
-                found = 1  
+                found = 1
+            if o == "weight_change_type": # é uma string, achar solução
+                self.weight_change_type = config.getint("POLICY","weight_change_type")
+                found = 1
+            if o == "linear_coefficient":
+                self.linear_coefficient = config.getint("POLICY","linear_coefficient")
+                found = 1
             if (found == 0):
                 print("\033[1mOption %s in section [POLICY] of %s file is unknown\033[0m" % (o, self.fileini))
                 sys.exit()
@@ -200,7 +209,7 @@ class BulletPolicy(Policy):
         self.noutputs = env.action_space.shape[0]          # only works for problems with continuous action space
         Policy.__init__(self, env, filename, seed, test)                            
     
-    def rollout(self, ntrials, render=False, seed=None):   # evaluate the policy for one or more episodes 
+    def rollout(self, ntrials, render=False, seed=None, step=None, maxmsteps=None):   # evaluate the policy for one or more episodes 
         rews = 0.0                      # summed reward
         steps = 0                       # steps performed        
         vect_rews = np.zeros(ntrials)
@@ -235,6 +244,23 @@ class BulletPolicy(Policy):
                 print("Trial %d Fit %.2f Steps %d " % (trial, rew, t))        
             vect_rews[trial] = rew
             steps += t
+
+        if (step and maxmsteps):
+            stage = math.trunc((step/maxsteps)*10)
+        else:
+            stage = self.stage
+
+        #100 min, 0 max -> 0 min, 100 max (10 stages) -10% + 10%
+        if (stage != self.stage):
+            self.stage = stage
+            print(stage)
+            if (self.weight_change_type = "min_max"):
+                self.min_fitness_weight -= self.linear_coefficient
+                self.max_fitness_weight += self.linear_coefficient
+            elif (self.weight_change_type = "max_min"):
+                self.min_fitness_weight += self.linear_coefficient
+                self.max_fitness_weight -= self.linear_coefficient
+
         total_weights = float(self.max_fitness_weight + self.avg_fitness_weight + self.min_fitness_weight);
         rews = (self.max_fitness_weight*vect_rews.max() + self.avg_fitness_weight*vect_rews.mean() + self.min_fitness_weight*vect_rews.min())/total_weights
         if (self.test > 0 and ntrials > 1):
