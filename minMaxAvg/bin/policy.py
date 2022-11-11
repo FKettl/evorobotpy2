@@ -51,9 +51,20 @@ class Policy(object):
         self.wrange = 1.0    # weight range, used in uniform initialization only
         self.low = -1.0      # mimimum activation
         self.high = 1.0      # maximum activation
-        self.stage = 0       # stage of the total experiment (0 to 9)
-        self.linear_coefficient = 0   # linear coefficient for the fitness_weight change each stage
-        self.weight_change_type = '' # The strategy to changing weights over stages ex: 'min_max' = decrease min, increase max
+        self.initial_max_fitness_weight = 0 # the start value of the weight of the best finess trial at the final fitness computation
+        self.initial_avg_fitness_weight = 0 # the start value of the weight of the average finess on all trials at the final fitness computation
+        self.initial_min_fitness_weight = 0 # the start value of the weight of the worst finess trial at the final fitness computation
+        self.final_max_fitness_weight = 0   # the start value of the weight of the best finess trial at the final fitness computation
+        self.final_avg_fitness_weight = 0   # the start value of the weight of the average finess on all trials at the final fitness computation
+        self.final_min_fitness_weight = 0   # the start value of the weight of the worst finess trial at the final fitness computation
+        self.max_linear_coefficient = 0     # amount that the max_linear_weight change each actual_step
+        self.avg_linear_coefficient = 0     # amount that the avg_linear_weight change each actual_step
+        self.min_linear_coefficient = 0     # amount that the min_linear_weight change each actual_step
+        self.steps_to_final = 0             # number of step to the initial weight change into the final weight
+        self.step_size = 0                  # how many % of the experiment one step translate to
+        self.actual_step = 0                # represent which ''phase'' of experiment it currently is
+        self.last_step_used = 0             # the last step were used to change the weight
+
         # Read configuration file
         self.readConfig()
         # Display info
@@ -135,14 +146,39 @@ class Policy(object):
             if (o == "maxsteps"):
                 self.maxsteps = config.getint("POLICY","maxsteps")
                 found = 1
-            if (o == "max_fitness_weight"):
-                self.max_fitness_weight = config.getfloat("POLICY","max_fitness_weight")
+            if (o == "initial_max_fitness_weight"):
+                self.initial_max_fitness_weight = config.getfloat("POLICY","initial_max_fitness_weight") * 100
+                self.max_fitness_weight = self.initial_max_fitness_weight
+                print(self.initial_max_fitness_weight/100)
                 found = 1
-            if (o == "avg_fitness_weight"):
-                self.avg_fitness_weight = config.getfloat("POLICY","avg_fitness_weight")
+            if (o == "initial_avg_fitness_weight"):
+                self.initial_avg_fitness_weight = config.getfloat("POLICY","initial_avg_fitness_weight") * 100
+                self.avg_fitness_weight = self.initial_avg_fitness_weight
+                print(self.initial_avg_fitness_weight/100)
                 found = 1
-            if (o == "min_fitness_weight"):
-                self.min_fitness_weight = config.getfloat("POLICY","min_fitness_weight")
+            if (o == "initial_min_fitness_weight"):
+                self.initial_min_fitness_weight = config.getfloat("POLICY","initial_min_fitness_weight") * 100
+                self.min_fitness_weight = self.initial_min_fitness_weight
+                print(self.initial_min_fitness_weight/100)
+                found = 1
+            if (o == "final_max_fitness_weight"):
+                self.final_max_fitness_weight = config.getfloat("POLICY","final_max_fitness_weight")
+                self.final_max_fitness_weight *= 100
+                found = 1
+            if (o == "final_avg_fitness_weight"):
+                self.final_avg_fitness_weight = config.getfloat("POLICY","final_avg_fitness_weight")
+                self.final_avg_fitness_weight *= 100
+                found = 1
+            if (o == "final_min_fitness_weight"):
+                self.final_min_fitness_weight = config.getfloat("POLICY","final_min_fitness_weight")
+                self.final_min_fitness_weight *= 100
+                found = 1
+            if (o == "steps_to_final"):
+                self.steps_to_final = config.getfloat("POLICY","steps_to_final")
+                found = 1
+            if (o == "step_size"):
+                self.step_size = config.getfloat("POLICY","step_size") * 100
+                self.step_size
                 found = 1
             if (o == "nhiddens"):
                 self.nhiddens = config.getint("POLICY","nhiddens")
@@ -185,12 +221,6 @@ class Policy(object):
                 found = 1
             if (o == "wrange"):
                 self.wrange = config.getint("POLICY","wrange")
-                found = 1
-            if o == "weight_change_type": # é uma string, achar solução
-                self.weight_change_type = config.getint("POLICY","weight_change_type")
-                found = 1
-            if o == "linear_coefficient":
-                self.linear_coefficient = config.getint("POLICY","linear_coefficient")
                 found = 1
             if (found == 0):
                 print("\033[1mOption %s in section [POLICY] of %s file is unknown\033[0m" % (o, self.fileini))
@@ -245,22 +275,35 @@ class BulletPolicy(Policy):
             vect_rews[trial] = rew
             steps += t
 
+
+        # Only change weights if we pass step and maxmsteps to rollout as arguments
         if (step and maxmsteps):
-            stage = math.trunc((step/maxsteps)*10)
-        else:
-            stage = self.stage
-
-        #100 min, 0 max -> 0 min, 100 max (10 stages) -10% + 10%
-        if (stage != self.stage):
-            self.stage = stage
-            print(stage)
-            if (self.weight_change_type = "min_max"):
-                self.min_fitness_weight -= self.linear_coefficient
-                self.max_fitness_weight += self.linear_coefficient
-            elif (self.weight_change_type = "max_min"):
-                self.min_fitness_weight += self.linear_coefficient
-                self.max_fitness_weight -= self.linear_coefficient
-
+            if ((self.max_linear_coefficient == 0) and (self.avg_linear_coefficient == 0) and (self.min_linear_coefficient == 0)):
+                self.max_linear_coefficient = math.trunc(((self.final_max_fitness_weight - self.initial_max_fitness_weight) / self.steps_to_final))
+                self.avg_linear_coefficient = math.trunc(((self.final_avg_fitness_weight - self.initial_avg_fitness_weight) / self.steps_to_final))
+                self.min_linear_coefficient = math.trunc(((self.final_min_fitness_weight - self.initial_min_fitness_weight) / self.steps_to_final))
+                #print(f'max_linear_coefficient = {self.max_linear_coefficient/100}')
+                #print(f'avg_linear_coefficient = {self.avg_linear_coefficient/100}')       
+                #print(f'min_linear_coefficient = {self.min_linear_coefficient/100}')
+            self.actual_step = math.trunc((step/maxmsteps)*10000)
+            if ((self.actual_step - self.last_step_used) >= self.step_size):
+                self.last_step_used = self.actual_step
+                print(f'actual_step = {self.actual_step/100} %')
+                print(f'step_size = {self.step_size/100} %')
+                if ((self.initial_max_fitness_weight <= (self.max_fitness_weight + self.max_linear_coefficient) <= self.final_max_fitness_weight) 
+                      or (self.final_max_fitness_weight <= (self.max_fitness_weight + self.max_linear_coefficient) <= self.initial_max_fitness_weight)):
+                    self.max_fitness_weight += self.max_linear_coefficient
+                if ((self.initial_avg_fitness_weight <= (self.avg_fitness_weight + self.avg_linear_coefficient) <= self.final_avg_fitness_weight) 
+                      or (self.final_avg_fitness_weight <= (self.avg_fitness_weight + self.avg_linear_coefficient) <= self.initial_avg_fitness_weight)):
+                    self.avg_fitness_weight += self.avg_linear_coefficient
+                if ((self.initial_min_fitness_weight <= (self.min_fitness_weight + self.min_linear_coefficient) <= self.final_min_fitness_weight) 
+                      or (self.final_min_fitness_weight <= (self.min_fitness_weight + self.min_linear_coefficient) <= self.initial_min_fitness_weight)):
+                    self.min_fitness_weight += self.min_linear_coefficient
+                print(f'max_fitness_weight = {self.max_fitness_weight/100}')
+                print(f'avg_fitness_weight = {self.avg_fitness_weight/100}')       
+                print(f'min_fitness_weight = {self.min_fitness_weight/100}')
+                
+      
         total_weights = float(self.max_fitness_weight + self.avg_fitness_weight + self.min_fitness_weight);
         rews = (self.max_fitness_weight*vect_rews.max() + self.avg_fitness_weight*vect_rews.mean() + self.min_fitness_weight*vect_rews.min())/total_weights
         if (self.test > 0 and ntrials > 1):

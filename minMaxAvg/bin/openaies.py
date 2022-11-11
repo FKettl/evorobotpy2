@@ -26,7 +26,6 @@ import configparser
 class Algo(EvoAlgo):
     def __init__(self, env, policy, seed, fileini, filedir):
         EvoAlgo.__init__(self, env, policy, seed, fileini, filedir)
-        self.ievReg = []
 
     def loadhyperparameters(self):
 
@@ -144,11 +143,6 @@ class Algo(EvoAlgo):
                 self.samplefitness[b*2+bb] = eval_rews
                 self.steps += eval_length
 
-                # we re-evaluate the individuals to estimate the iev measure
-                if (((self.cgen - 1) % 1) == 0): #- changing for evaluating them at each generation
-                    eval_rews, eval_length = self.policy.rollout(self.policy.ntrials, seed=(self.seed + (self.cgen * self.batchSize) + b + 999))  
-                    self.samplefitness2[b*2+bb] = eval_rews
-
         fitness, self.index = ascendent_sort(self.samplefitness)       # sort the fitness
         self.avgfit = np.average(fitness)                         # compute the average fitness                   
 
@@ -172,10 +166,10 @@ class Algo(EvoAlgo):
             self.tnormepisodes += self.inormepisodes
 
             #setting the default values for initial posture variation
-            currentRandInitLow = self.policy.env.robot.randInitLow
-            currentRandInitHigh = self.policy.env.robot.randInitHigh
-            self.policy.env.robot.randInitLow = self.defaultRandInitLow
-            self.policy.env.robot.randInitHigh = self.defaultRandInitHigh
+            #currentRandInitLow = self.policy.env.robot.randInitLow
+            #currentRandInitHigh = self.policy.env.robot.randInitHigh
+            #self.policy.env.robot.randInitLow = self.defaultRandInitLow
+            #self.policy.env.robot.randInitHigh = self.defaultRandInitHigh
 
             #using the average fitness on the generalization test
             evol_max_fitness_weight = self.policy.max_fitness_weight
@@ -201,27 +195,10 @@ class Algo(EvoAlgo):
             self.policy.min_fitness_weight = evol_min_fitness_weight 
 
             #reset the experimental environmental variation
-            self.policy.env.robot.randInitLow = currentRandInitLow
-            self.policy.env.robot.randInitHigh = currentRandInitHigh
-            
-        # we compute the iev measure
-        if (((self.cgen - 1) % 1) == 0):
-           fitness2, index2 = ascendent_sort(self.samplefitness2)
-           popsize = self.batchSize * 2
-           utilities = zeros(popsize)
-           utilities2 = zeros(popsize)
-           for i in range(popsize):
-              utilities[self.index[i]] = i
-           utilities /= (popsize - 1)
-           for i in range(popsize):
-              utilities2[index2[i]] = i
-           utilities2 /= (popsize - 1)
-           iev = 0
-           for i in range(popsize):
-               iev += abs(utilities[i] - utilities2[i])
-            
-           print(f" =*=*=* GEN {self.cgen} - IEV = {iev/popsize} =*=*=*")
-           self.ievReg.append(iev/popsize)
+            #self.policy.env.robot.randInitLow = currentRandInitLow
+            #self.policy.env.robot.randInitHigh = currentRandInitHigh
+
+
 
 
     def optimize(self):
@@ -279,13 +256,13 @@ class Algo(EvoAlgo):
         elapsed = 0
         self.steps = 0
         print("Salimans: seed %d maxmsteps %d batchSize %d stepsize %lf noiseStdDev %lf wdecay %d symseed %d nparams %d" % (self.seed, self.maxsteps / 1000000, self.batchSize, self.stepsize, self.noiseStdDev, self.wdecay, self.symseed, self.nparams))
-        self.defaultRandInitLow = self.policy.env.robot.randInitLow
-        self.defaultRandInitHigh = self.policy.env.robot.randInitHigh
+        #self.defaultRandInitLow = self.policy.env.robot.randInitLow
+        #self.defaultRandInitHigh = self.policy.env.robot.randInitHigh
 
         #applying the initial environmental variation        
-        self.policy.env.robot.randInitLow = self.defaultRandInitLow*self.percentual_env_var
-        self.policy.env.robot.randInitHigh = self.defaultRandInitHigh*self.percentual_env_var
-        print(f"####USING {self.percentual_env_var*100} of the default environmental variation - actual range = [{self.policy.env.robot.randInitLow},{self.policy.env.robot.randInitHigh}]")
+        #self.policy.env.robot.randInitLow = self.defaultRandInitLow*self.percentual_env_var
+        #self.policy.env.robot.randInitHigh = self.defaultRandInitHigh*self.percentual_env_var
+        #print(f"####USING {self.percentual_env_var*100} of the default environmental variation - actual range = [{self.policy.env.robot.randInitLow},{self.policy.env.robot.randInitHigh}]")
 
         while (self.steps < self.maxsteps):
 
@@ -308,8 +285,6 @@ class Algo(EvoAlgo):
                       (self.seed, self.steps / float(self.maxsteps) * 100, self.cgen, self.steps / 1000000, self.bestfit, self.bestgfit, self.bfit, self.avgfit, self.avecenter))
 
         self.savedata()                           # save data at the end of evolution
-        np.save(self.filedir + "/S" + str(self.seed) + ".iev",self.ievReg)        
-        self.ievReg = []
         # print simulation time
         end_time = time.time()
         print('Simulation time: %dm%ds ' % (divmod(end_time - start_time, 60)))
