@@ -10,7 +10,7 @@ import time
 e_folder = '../felipe_experiments/experimentos'
 
 '''how many seeds do you want to run for each experiment?'''
-number_of_seeds = 10
+number_of_seeds = 20
 
 '''you can type the additional parameters that you want to use to run your experiments'''
 additional_params = '-w 1'
