@@ -1,0 +1,1402 @@
+Experiment: Environment AntBulletEnv-v5 Algo OpenAI-ES nreplications 1 
+pybullet build time: Mar 15 2023 15:12:25
+ByBullet Ant-v5: reward = progress + 0.01 + (torque_cost * -0.01) + (nJointLimit * -0.1)
+50.0
+50.0
+0.0
+Policy: episodes 5 postevaluation episodes 10 maxsteps 1000 input normalization 1 nrobots 1 heterogeneous 0
+Network 28->50->8 feedforward with bias tanh output:linear init: norm-incoming input-normalization clip motor-noise 0.01 
+the policy will be updated as follow:
+neuron [0-28] updated
+netinput of neurons [28-78] computed on the basis of activation received from neurons [0-28] 
+neuron [28-78] updated
+netinput of neurons [78-86] computed on the basis of activation received from neurons [28-78] 
+neuron [78-86] updated
+Run Evolve: Environment AntBulletEnv-v5 Seed 16 Nreplications 1
+Salimans: seed 16 maxmsteps 50 batchSize 20 stepsize 0.010000 noiseStdDev 0.020000 wdecay 1 symseed 1 nparams 1858
+argv[0]=
+argv[0]=
+Seed 16 (0.0%) gen 1 msteps 0 bestfit -7.30 bestgfit -7.45 bestsam -7.30 avg -10.16 weightsize 0.12
+save data
+Seed 16 (0.1%) gen 2 msteps 0 bestfit -7.30 bestgfit -7.45 bestsam -7.46 avg -35.60 weightsize 0.12
+save data
+Seed 16 (0.1%) gen 3 msteps 0 bestfit -7.30 bestgfit -7.45 bestsam -7.33 avg -22.96 weightsize 0.12
+save data
+Seed 16 (0.1%) gen 4 msteps 0 bestfit -7.30 bestgfit -7.45 bestsam -7.52 avg -24.19 weightsize 0.12
+save data
+Seed 16 (0.1%) gen 5 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -6.24 avg -12.91 weightsize 0.12
+save data
+Seed 16 (0.1%) gen 6 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.46 avg -12.80 weightsize 0.12
+Seed 16 (0.2%) gen 7 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.45 avg -7.82 weightsize 0.12
+save data
+Seed 16 (0.2%) gen 8 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.49 avg -7.82 weightsize 0.12
+Seed 16 (0.2%) gen 9 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.03 avg -7.72 weightsize 0.12
+save data
+Seed 16 (0.2%) gen 10 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.40 avg -8.34 weightsize 0.12
+Seed 16 (0.2%) gen 11 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.39 avg -8.51 weightsize 0.12
+save data
+Seed 16 (0.2%) gen 12 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.39 avg -7.83 weightsize 0.12
+Seed 16 (0.2%) gen 13 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.44 avg -7.94 weightsize 0.12
+save data
+Seed 16 (0.2%) gen 14 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.15 avg -7.80 weightsize 0.12
+Seed 16 (0.2%) gen 15 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.28 avg -7.99 weightsize 0.12
+save data
+Seed 16 (0.2%) gen 16 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.29 avg -7.57 weightsize 0.12
+Seed 16 (0.2%) gen 17 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.24 avg -7.47 weightsize 0.12
+save data
+Seed 16 (0.2%) gen 18 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -7.08 avg -7.45 weightsize 0.12
+Seed 16 (0.3%) gen 19 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -6.92 avg -7.36 weightsize 0.13
+save data
+Seed 16 (0.3%) gen 20 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -6.72 avg -7.29 weightsize 0.13
+Seed 16 (0.3%) gen 21 msteps 0 bestfit -6.24 bestgfit -6.96 bestsam -6.74 avg -7.21 weightsize 0.13
+save data
+Seed 16 (0.3%) gen 22 msteps 0 bestfit -5.95 bestgfit -6.08 bestsam -5.95 avg -6.99 weightsize 0.13
+Seed 16 (0.3%) gen 23 msteps 0 bestfit -5.84 bestgfit -6.07 bestsam -5.84 avg -6.68 weightsize 0.13
+save data
+Seed 16 (0.3%) gen 24 msteps 0 bestfit -5.14 bestgfit -5.20 bestsam -5.14 avg -6.40 weightsize 0.13
+save data
+Seed 16 (0.3%) gen 25 msteps 0 bestfit -4.41 bestgfit -5.20 bestsam -4.41 avg -6.34 weightsize 0.13
+save data
+Seed 16 (0.3%) gen 26 msteps 0 bestfit -3.45 bestgfit -4.81 bestsam -3.45 avg -6.56 weightsize 0.13
+save data
+Seed 16 (0.3%) gen 27 msteps 0 bestfit -3.18 bestgfit -4.04 bestsam -3.18 avg -9.11 weightsize 0.13
+save data
+Seed 16 (0.4%) gen 28 msteps 0 bestfit -3.18 bestgfit -4.04 bestsam -3.90 avg -14.48 weightsize 0.13
+save data
+Seed 16 (0.4%) gen 29 msteps 0 bestfit -2.30 bestgfit -4.04 bestsam -2.30 avg -26.21 weightsize 0.13
+save data
+Seed 16 (0.5%) gen 30 msteps 0 bestfit -2.30 bestgfit -4.04 bestsam -3.47 avg -16.48 weightsize 0.13
+save data
+Seed 16 (0.5%) gen 31 msteps 0 bestfit -1.71 bestgfit -3.84 bestsam -1.71 avg -13.60 weightsize 0.13
+save data
+Seed 16 (0.5%) gen 32 msteps 0 bestfit -1.71 bestgfit -3.84 bestsam -2.27 avg -11.59 weightsize 0.13
+save data
+Seed 16 (0.5%) gen 33 msteps 0 bestfit -1.71 bestgfit -3.26 bestsam -2.65 avg -7.00 weightsize 0.13
+save data
+Seed 16 (0.6%) gen 34 msteps 0 bestfit -1.71 bestgfit -3.26 bestsam -2.60 avg -8.96 weightsize 0.13
+save data
+Seed 16 (0.6%) gen 35 msteps 0 bestfit -0.70 bestgfit -3.15 bestsam -0.70 avg -3.98 weightsize 0.13
+save data
+Seed 16 (0.6%) gen 36 msteps 0 bestfit -0.70 bestgfit -2.75 bestsam -1.66 avg -4.73 weightsize 0.13
+save data
+Seed 16 (0.6%) gen 37 msteps 0 bestfit -0.70 bestgfit -2.75 bestsam -2.20 avg -4.64 weightsize 0.13
+save data
+Seed 16 (0.6%) gen 38 msteps 0 bestfit -0.70 bestgfit -2.02 bestsam -0.85 avg -6.43 weightsize 0.13
+save data
+Seed 16 (0.6%) gen 39 msteps 0 bestfit -0.70 bestgfit -2.02 bestsam -1.00 avg -7.35 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 40 msteps 0 bestfit -0.54 bestgfit -1.63 bestsam -0.54 avg -6.73 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 41 msteps 0 bestfit -0.32 bestgfit -1.63 bestsam -0.32 avg -4.95 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 42 msteps 0 bestfit 1.64 bestgfit -0.18 bestsam 1.64 avg -2.05 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 43 msteps 0 bestfit 1.84 bestgfit 0.07 bestsam 1.84 avg -1.76 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 44 msteps 0 bestfit 1.84 bestgfit 0.55 bestsam 1.52 avg -1.37 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 45 msteps 0 bestfit 2.38 bestgfit 0.55 bestsam 2.38 avg -2.26 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 46 msteps 0 bestfit 2.81 bestgfit 0.55 bestsam 2.81 avg -0.38 weightsize 0.13
+save data
+Seed 16 (0.7%) gen 47 msteps 0 bestfit 2.95 bestgfit 0.55 bestsam 2.95 avg -2.29 weightsize 0.13
+save data
+Seed 16 (0.8%) gen 48 msteps 0 bestfit 3.75 bestgfit 1.25 bestsam 3.75 avg -3.46 weightsize 0.13
+save data
+Seed 16 (0.8%) gen 49 msteps 0 bestfit 4.58 bestgfit 3.03 bestsam 4.58 avg -10.84 weightsize 0.13
+save data
+Seed 16 (0.8%) gen 50 msteps 0 bestfit 4.96 bestgfit 3.03 bestsam 4.96 avg -8.37 weightsize 0.13
+save data
+Seed 16 (0.9%) gen 51 msteps 0 bestfit 4.96 bestgfit 3.03 bestsam 3.66 avg -16.32 weightsize 0.13
+save data
+Seed 16 (0.9%) gen 52 msteps 0 bestfit 4.96 bestgfit 3.03 bestsam 3.53 avg -24.88 weightsize 0.13
+save data
+Seed 16 (0.9%) gen 53 msteps 0 bestfit 4.96 bestgfit 3.03 bestsam 4.06 avg -22.48 weightsize 0.13
+save data
+Seed 16 (1.0%) gen 54 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 5.52 avg -20.43 weightsize 0.13
+save data
+Seed 16 (1.1%) gen 55 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.53 avg -36.96 weightsize 0.13
+save data
+Seed 16 (1.1%) gen 56 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 3.83 avg -49.77 weightsize 0.13
+save data
+Seed 16 (1.2%) gen 57 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.64 avg -10.97 weightsize 0.13
+save data
+Seed 16 (1.2%) gen 58 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 3.93 avg -15.19 weightsize 0.13
+save data
+Seed 16 (1.2%) gen 59 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.45 avg -16.36 weightsize 0.13
+save data
+Seed 16 (1.2%) gen 60 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.59 avg -0.74 weightsize 0.13
+save data
+Seed 16 (1.3%) gen 61 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 5.32 avg -2.97 weightsize 0.13
+save data
+Seed 16 (1.3%) gen 62 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.94 avg -5.02 weightsize 0.13
+save data
+Seed 16 (1.3%) gen 63 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.67 avg 2.46 weightsize 0.13
+save data
+Seed 16 (1.3%) gen 64 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.88 avg -3.62 weightsize 0.13
+save data
+Seed 16 (1.3%) gen 65 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.04 avg -0.91 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 66 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.66 avg 1.61 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 67 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.72 avg 2.16 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 68 msteps 0 bestfit 5.52 bestgfit 3.03 bestsam 4.79 avg 1.53 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 69 msteps 0 bestfit 5.52 bestgfit 4.24 bestsam 4.82 avg 2.43 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 70 msteps 0 bestfit 5.56 bestgfit 4.24 bestsam 5.56 avg 1.69 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 71 msteps 0 bestfit 5.56 bestgfit 4.24 bestsam 5.29 avg 2.21 weightsize 0.14
+save data
+Seed 16 (1.4%) gen 72 msteps 0 bestfit 5.56 bestgfit 4.24 bestsam 5.28 avg 2.23 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 73 msteps 0 bestfit 5.56 bestgfit 4.24 bestsam 5.34 avg 0.68 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 74 msteps 0 bestfit 5.56 bestgfit 4.24 bestsam 5.32 avg 2.73 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 75 msteps 0 bestfit 5.87 bestgfit 4.90 bestsam 5.87 avg 3.39 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 76 msteps 0 bestfit 5.87 bestgfit 4.90 bestsam 5.57 avg 2.53 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 77 msteps 0 bestfit 6.54 bestgfit 5.55 bestsam 6.54 avg 3.69 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 78 msteps 0 bestfit 6.54 bestgfit 5.55 bestsam 5.83 avg 3.34 weightsize 0.14
+save data
+Seed 16 (1.5%) gen 79 msteps 0 bestfit 6.54 bestgfit 5.55 bestsam 6.54 avg 3.51 weightsize 0.14
+save data
+Seed 16 (1.6%) gen 80 msteps 0 bestfit 7.13 bestgfit 5.55 bestsam 7.13 avg 4.19 weightsize 0.14
+save data
+Seed 16 (1.6%) gen 81 msteps 0 bestfit 7.13 bestgfit 5.55 bestsam 6.77 avg 3.30 weightsize 0.14
+save data
+Seed 16 (1.6%) gen 82 msteps 0 bestfit 8.10 bestgfit 5.60 bestsam 8.10 avg 3.80 weightsize 0.14
+save data
+Seed 16 (1.6%) gen 83 msteps 0 bestfit 8.10 bestgfit 5.96 bestsam 7.82 avg 4.98 weightsize 0.14
+save data
+Seed 16 (1.6%) gen 84 msteps 0 bestfit 8.10 bestgfit 7.13 bestsam 7.89 avg 2.34 weightsize 0.14
+save data
+Seed 16 (1.6%) gen 85 msteps 0 bestfit 8.73 bestgfit 7.13 bestsam 8.73 avg 4.72 weightsize 0.14
+save data
+Seed 16 (1.7%) gen 86 msteps 0 bestfit 8.73 bestgfit 7.13 bestsam 8.41 avg 5.45 weightsize 0.14
+save data
+Seed 16 (1.7%) gen 87 msteps 0 bestfit 8.73 bestgfit 7.96 bestsam 8.66 avg 5.24 weightsize 0.14
+save data
+Seed 16 (1.7%) gen 88 msteps 0 bestfit 9.77 bestgfit 7.96 bestsam 9.77 avg 4.92 weightsize 0.14
+save data
+Seed 16 (1.7%) gen 89 msteps 0 bestfit 10.54 bestgfit 9.31 bestsam 10.54 avg 4.90 weightsize 0.14
+save data
+Seed 16 (1.7%) gen 90 msteps 0 bestfit 10.54 bestgfit 9.31 bestsam 10.41 avg 1.88 weightsize 0.14
+save data
+Seed 16 (1.8%) gen 91 msteps 0 bestfit 11.82 bestgfit 9.93 bestsam 11.82 avg 5.32 weightsize 0.14
+save data
+Seed 16 (1.8%) gen 92 msteps 0 bestfit 11.82 bestgfit 9.93 bestsam 10.28 avg 0.28 weightsize 0.14
+save data
+Seed 16 (1.8%) gen 93 msteps 0 bestfit 11.82 bestgfit 9.93 bestsam 10.84 avg 3.61 weightsize 0.14
+save data
+Seed 16 (1.8%) gen 94 msteps 0 bestfit 11.82 bestgfit 10.24 bestsam 11.32 avg 1.29 weightsize 0.14
+save data
+Seed 16 (1.9%) gen 95 msteps 0 bestfit 12.02 bestgfit 10.24 bestsam 12.02 avg 2.16 weightsize 0.14
+save data
+Seed 16 (1.9%) gen 96 msteps 0 bestfit 14.18 bestgfit 11.53 bestsam 14.18 avg 7.24 weightsize 0.14
+save data
+Seed 16 (1.9%) gen 97 msteps 0 bestfit 14.18 bestgfit 11.53 bestsam 12.40 avg 8.15 weightsize 0.14
+save data
+Seed 16 (1.9%) gen 98 msteps 0 bestfit 14.18 bestgfit 11.53 bestsam 12.15 avg 7.69 weightsize 0.14
+save data
+Seed 16 (1.9%) gen 99 msteps 0 bestfit 14.18 bestgfit 11.53 bestsam 12.01 avg 3.71 weightsize 0.14
+save data
+Seed 16 (2.0%) gen 100 msteps 0 bestfit 14.18 bestgfit 11.53 bestsam 11.57 avg 2.41 weightsize 0.14
+save data
+Seed 16 (2.0%) gen 101 msteps 0 bestfit 14.18 bestgfit 13.20 bestsam 13.79 avg 4.95 weightsize 0.14
+save data
+Seed 16 (2.0%) gen 102 msteps 0 bestfit 14.60 bestgfit 13.20 bestsam 14.60 avg 4.54 weightsize 0.14
+save data
+Seed 16 (2.0%) gen 103 msteps 1 bestfit 14.60 bestgfit 13.20 bestsam 13.05 avg 8.59 weightsize 0.14
+save data
+Seed 16 (2.0%) gen 104 msteps 1 bestfit 14.60 bestgfit 13.20 bestsam 12.33 avg 6.62 weightsize 0.14
+save data
+Seed 16 (2.1%) gen 105 msteps 1 bestfit 14.60 bestgfit 13.20 bestsam 13.87 avg 7.13 weightsize 0.14
+save data
+Seed 16 (2.1%) gen 106 msteps 1 bestfit 14.60 bestgfit 13.20 bestsam 13.47 avg 7.26 weightsize 0.14
+save data
+Seed 16 (2.1%) gen 107 msteps 1 bestfit 14.60 bestgfit 13.79 bestsam 14.52 avg 6.45 weightsize 0.14
+save data
+Seed 16 (2.1%) gen 108 msteps 1 bestfit 14.67 bestgfit 13.79 bestsam 14.67 avg 6.79 weightsize 0.14
+save data
+Seed 16 (2.1%) gen 109 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 16.40 avg 7.88 weightsize 0.14
+save data
+Seed 16 (2.2%) gen 110 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 14.74 avg 8.05 weightsize 0.14
+save data
+Seed 16 (2.2%) gen 111 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 14.56 avg 2.59 weightsize 0.14
+save data
+Seed 16 (2.2%) gen 112 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 13.21 avg 8.77 weightsize 0.14
+save data
+Seed 16 (2.2%) gen 113 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 13.97 avg 8.73 weightsize 0.14
+save data
+Seed 16 (2.2%) gen 114 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 13.76 avg 10.28 weightsize 0.14
+save data
+Seed 16 (2.3%) gen 115 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 15.06 avg 8.94 weightsize 0.14
+save data
+Seed 16 (2.3%) gen 116 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 14.65 avg 10.56 weightsize 0.14
+save data
+Seed 16 (2.3%) gen 117 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 14.85 avg 7.95 weightsize 0.14
+save data
+Seed 16 (2.3%) gen 118 msteps 1 bestfit 16.40 bestgfit 13.79 bestsam 13.20 avg 8.60 weightsize 0.14
+save data
+Seed 16 (2.3%) gen 119 msteps 1 bestfit 16.40 bestgfit 14.78 bestsam 14.88 avg 7.76 weightsize 0.14
+save data
+Seed 16 (2.4%) gen 120 msteps 1 bestfit 16.40 bestgfit 14.78 bestsam 14.62 avg 10.10 weightsize 0.14
+save data
+Seed 16 (2.4%) gen 121 msteps 1 bestfit 16.40 bestgfit 14.78 bestsam 14.09 avg 6.75 weightsize 0.14
+save data
+Seed 16 (2.4%) gen 122 msteps 1 bestfit 16.40 bestgfit 14.78 bestsam 15.66 avg 9.65 weightsize 0.14
+save data
+Seed 16 (2.4%) gen 123 msteps 1 bestfit 16.40 bestgfit 14.78 bestsam 14.02 avg 7.71 weightsize 0.14
+save data
+Seed 16 (2.4%) gen 124 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.28 avg 6.41 weightsize 0.14
+save data
+Seed 16 (2.5%) gen 125 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.30 avg 11.52 weightsize 0.14
+save data
+Seed 16 (2.5%) gen 126 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 13.99 avg 10.99 weightsize 0.14
+save data
+Seed 16 (2.5%) gen 127 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.62 avg 2.97 weightsize 0.14
+save data
+Seed 16 (2.5%) gen 128 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 14.43 avg 2.14 weightsize 0.14
+save data
+Seed 16 (2.6%) gen 129 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 14.12 avg 11.48 weightsize 0.14
+save data
+Seed 16 (2.6%) gen 130 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.61 avg 5.60 weightsize 0.14
+save data
+Seed 16 (2.6%) gen 131 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.29 avg 10.70 weightsize 0.14
+save data
+Seed 16 (2.6%) gen 132 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.23 avg 9.08 weightsize 0.14
+save data
+Seed 16 (2.6%) gen 133 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.54 avg 10.28 weightsize 0.14
+save data
+Seed 16 (2.7%) gen 134 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 16.15 avg 10.26 weightsize 0.14
+save data
+Seed 16 (2.7%) gen 135 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 14.94 avg 11.86 weightsize 0.14
+save data
+Seed 16 (2.7%) gen 136 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 15.84 avg 11.34 weightsize 0.14
+save data
+Seed 16 (2.7%) gen 137 msteps 1 bestfit 16.40 bestgfit 15.04 bestsam 16.20 avg 11.07 weightsize 0.14
+save data
+Seed 16 (2.7%) gen 138 msteps 1 bestfit 16.82 bestgfit 15.04 bestsam 16.82 avg 10.88 weightsize 0.14
+save data
+Seed 16 (2.8%) gen 139 msteps 1 bestfit 16.82 bestgfit 15.04 bestsam 16.54 avg 12.32 weightsize 0.14
+save data
+Seed 16 (2.8%) gen 140 msteps 1 bestfit 16.82 bestgfit 15.04 bestsam 16.19 avg 11.92 weightsize 0.14
+save data
+Seed 16 (2.8%) gen 141 msteps 1 bestfit 18.05 bestgfit 16.71 bestsam 18.05 avg 12.44 weightsize 0.14
+save data
+Seed 16 (2.8%) gen 142 msteps 1 bestfit 18.05 bestgfit 16.71 bestsam 17.04 avg 12.69 weightsize 0.14
+save data
+Seed 16 (2.8%) gen 143 msteps 1 bestfit 18.05 bestgfit 17.37 bestsam 17.66 avg 13.18 weightsize 0.14
+save data
+Seed 16 (2.9%) gen 144 msteps 1 bestfit 18.26 bestgfit 17.37 bestsam 18.26 avg 11.95 weightsize 0.14
+save data
+Seed 16 (2.9%) gen 145 msteps 1 bestfit 18.26 bestgfit 17.37 bestsam 17.61 avg 13.18 weightsize 0.14
+save data
+Seed 16 (2.9%) gen 146 msteps 1 bestfit 19.35 bestgfit 17.37 bestsam 19.35 avg 13.45 weightsize 0.14
+save data
+Seed 16 (2.9%) gen 147 msteps 1 bestfit 19.35 bestgfit 17.37 bestsam 19.14 avg 13.99 weightsize 0.14
+save data
+Seed 16 (2.9%) gen 148 msteps 1 bestfit 19.35 bestgfit 17.37 bestsam 17.62 avg 13.83 weightsize 0.14
+save data
+Seed 16 (2.9%) gen 149 msteps 1 bestfit 22.98 bestgfit 18.48 bestsam 22.98 avg 13.70 weightsize 0.14
+save data
+Seed 16 (3.0%) gen 150 msteps 1 bestfit 22.98 bestgfit 18.48 bestsam 19.29 avg 14.22 weightsize 0.14
+save data
+Seed 16 (3.0%) gen 151 msteps 1 bestfit 22.98 bestgfit 18.48 bestsam 18.88 avg 11.91 weightsize 0.14
+save data
+Seed 16 (3.0%) gen 152 msteps 1 bestfit 22.98 bestgfit 18.48 bestsam 20.94 avg 14.24 weightsize 0.14
+save data
+Seed 16 (3.0%) gen 153 msteps 1 bestfit 22.98 bestgfit 18.48 bestsam 19.52 avg 15.58 weightsize 0.14
+save data
+Seed 16 (3.0%) gen 154 msteps 1 bestfit 22.98 bestgfit 18.48 bestsam 19.62 avg 15.17 weightsize 0.14
+save data
+Seed 16 (3.1%) gen 155 msteps 1 bestfit 23.59 bestgfit 18.67 bestsam 23.59 avg 15.22 weightsize 0.14
+save data
+Seed 16 (3.1%) gen 156 msteps 1 bestfit 23.59 bestgfit 18.67 bestsam 23.29 avg 16.53 weightsize 0.14
+save data
+Seed 16 (3.1%) gen 157 msteps 1 bestfit 23.59 bestgfit 20.20 bestsam 21.07 avg 16.25 weightsize 0.14
+save data
+Seed 16 (3.1%) gen 158 msteps 1 bestfit 24.75 bestgfit 20.20 bestsam 24.75 avg 16.71 weightsize 0.14
+save data
+Seed 16 (3.2%) gen 159 msteps 1 bestfit 26.72 bestgfit 20.51 bestsam 26.72 avg 16.37 weightsize 0.14
+save data
+Seed 16 (3.2%) gen 160 msteps 1 bestfit 26.72 bestgfit 20.51 bestsam 22.68 avg 17.35 weightsize 0.14
+save data
+Seed 16 (3.2%) gen 161 msteps 1 bestfit 27.35 bestgfit 21.29 bestsam 27.35 avg 17.57 weightsize 0.14
+save data
+Seed 16 (3.2%) gen 162 msteps 1 bestfit 27.35 bestgfit 21.29 bestsam 25.50 avg 16.44 weightsize 0.14
+save data
+Seed 16 (3.3%) gen 163 msteps 1 bestfit 28.54 bestgfit 23.44 bestsam 28.54 avg 16.79 weightsize 0.14
+save data
+Seed 16 (3.3%) gen 164 msteps 1 bestfit 29.54 bestgfit 23.44 bestsam 29.54 avg 15.07 weightsize 0.14
+save data
+Seed 16 (3.3%) gen 165 msteps 1 bestfit 30.21 bestgfit 24.25 bestsam 30.21 avg 20.98 weightsize 0.14
+save data
+Seed 16 (3.3%) gen 166 msteps 1 bestfit 32.65 bestgfit 24.25 bestsam 32.65 avg 15.45 weightsize 0.14
+save data
+Seed 16 (3.4%) gen 167 msteps 1 bestfit 32.85 bestgfit 24.25 bestsam 32.85 avg 18.23 weightsize 0.14
+save data
+Seed 16 (3.4%) gen 168 msteps 1 bestfit 33.22 bestgfit 24.25 bestsam 33.22 avg 21.88 weightsize 0.14
+save data
+Seed 16 (3.4%) gen 169 msteps 1 bestfit 33.22 bestgfit 24.25 bestsam 30.52 avg 20.47 weightsize 0.14
+save data
+Seed 16 (3.5%) gen 170 msteps 1 bestfit 33.22 bestgfit 26.57 bestsam 32.43 avg 21.64 weightsize 0.14
+save data
+Seed 16 (3.5%) gen 171 msteps 1 bestfit 33.51 bestgfit 30.72 bestsam 33.51 avg 24.83 weightsize 0.14
+save data
+Seed 16 (3.5%) gen 172 msteps 1 bestfit 33.66 bestgfit 30.72 bestsam 33.66 avg 24.54 weightsize 0.14
+save data
+Seed 16 (3.5%) gen 173 msteps 1 bestfit 35.71 bestgfit 33.81 bestsam 35.71 avg 25.05 weightsize 0.14
+save data
+Seed 16 (3.6%) gen 174 msteps 1 bestfit 35.71 bestgfit 33.81 bestsam 33.52 avg 24.24 weightsize 0.14
+save data
+Seed 16 (3.6%) gen 175 msteps 1 bestfit 35.71 bestgfit 33.81 bestsam 33.70 avg 23.02 weightsize 0.14
+save data
+Seed 16 (3.6%) gen 176 msteps 1 bestfit 35.71 bestgfit 33.81 bestsam 34.09 avg 24.94 weightsize 0.14
+save data
+Seed 16 (3.6%) gen 177 msteps 1 bestfit 35.71 bestgfit 34.10 bestsam 34.98 avg 23.39 weightsize 0.14
+save data
+Seed 16 (3.7%) gen 178 msteps 1 bestfit 35.71 bestgfit 34.10 bestsam 34.02 avg 24.67 weightsize 0.14
+save data
+Seed 16 (3.7%) gen 179 msteps 1 bestfit 35.71 bestgfit 34.10 bestsam 33.61 avg 24.79 weightsize 0.14
+save data
+Seed 16 (3.7%) gen 180 msteps 1 bestfit 35.97 bestgfit 34.10 bestsam 35.97 avg 24.60 weightsize 0.14
+save data
+Seed 16 (3.8%) gen 181 msteps 1 bestfit 36.12 bestgfit 34.10 bestsam 36.12 avg 25.21 weightsize 0.14
+save data
+Seed 16 (3.8%) gen 182 msteps 1 bestfit 36.12 bestgfit 34.10 bestsam 35.02 avg 25.54 weightsize 0.14
+save data
+Seed 16 (3.8%) gen 183 msteps 1 bestfit 36.83 bestgfit 34.10 bestsam 36.83 avg 26.00 weightsize 0.14
+save data
+Seed 16 (3.8%) gen 184 msteps 1 bestfit 36.83 bestgfit 34.10 bestsam 35.65 avg 28.53 weightsize 0.14
+save data
+Seed 16 (3.9%) gen 185 msteps 1 bestfit 36.83 bestgfit 34.10 bestsam 33.71 avg 25.89 weightsize 0.14
+save data
+Seed 16 (3.9%) gen 186 msteps 1 bestfit 37.92 bestgfit 34.10 bestsam 37.92 avg 25.73 weightsize 0.14
+save data
+Seed 16 (3.9%) gen 187 msteps 1 bestfit 37.92 bestgfit 34.10 bestsam 37.67 avg 28.04 weightsize 0.14
+save data
+Seed 16 (4.0%) gen 188 msteps 1 bestfit 38.46 bestgfit 35.20 bestsam 38.46 avg 28.27 weightsize 0.14
+save data
+Seed 16 (4.0%) gen 189 msteps 1 bestfit 38.46 bestgfit 36.80 bestsam 37.89 avg 28.83 weightsize 0.14
+save data
+Seed 16 (4.0%) gen 190 msteps 2 bestfit 39.24 bestgfit 36.80 bestsam 39.24 avg 26.47 weightsize 0.14
+save data
+Seed 16 (4.0%) gen 191 msteps 2 bestfit 45.93 bestgfit 36.80 bestsam 45.93 avg 30.66 weightsize 0.14
+save data
+Seed 16 (4.1%) gen 192 msteps 2 bestfit 45.93 bestgfit 36.80 bestsam 37.14 avg 28.40 weightsize 0.14
+save data
+Seed 16 (4.1%) gen 193 msteps 2 bestfit 45.93 bestgfit 36.80 bestsam 45.57 avg 31.80 weightsize 0.14
+save data
+Seed 16 (4.1%) gen 194 msteps 2 bestfit 45.93 bestgfit 36.80 bestsam 39.40 avg 29.69 weightsize 0.14
+save data
+Seed 16 (4.2%) gen 195 msteps 2 bestfit 45.93 bestgfit 36.80 bestsam 45.66 avg 30.27 weightsize 0.14
+save data
+Seed 16 (4.2%) gen 196 msteps 2 bestfit 46.96 bestgfit 36.80 bestsam 46.96 avg 30.96 weightsize 0.14
+save data
+Seed 16 (4.2%) gen 197 msteps 2 bestfit 46.96 bestgfit 36.80 bestsam 40.36 avg 34.37 weightsize 0.14
+save data
+Seed 16 (4.3%) gen 198 msteps 2 bestfit 46.96 bestgfit 40.87 bestsam 43.36 avg 33.30 weightsize 0.14
+save data
+Seed 16 (4.3%) gen 199 msteps 2 bestfit 51.32 bestgfit 40.87 bestsam 51.32 avg 28.29 weightsize 0.14
+save data
+Seed 16 (4.3%) gen 200 msteps 2 bestfit 51.32 bestgfit 40.87 bestsam 47.00 avg 31.62 weightsize 0.14
+save data
+Seed 16 (4.4%) gen 201 msteps 2 bestfit 51.32 bestgfit 40.87 bestsam 48.50 avg 34.26 weightsize 0.14
+save data
+Seed 16 (4.4%) gen 202 msteps 2 bestfit 51.75 bestgfit 40.87 bestsam 51.75 avg 32.20 weightsize 0.14
+save data
+Seed 16 (4.4%) gen 203 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 50.22 avg 36.19 weightsize 0.14
+save data
+Seed 16 (4.5%) gen 204 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 47.50 avg 28.60 weightsize 0.14
+save data
+Seed 16 (4.5%) gen 205 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 45.52 avg 35.85 weightsize 0.14
+save data
+Seed 16 (4.5%) gen 206 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 45.31 avg 35.22 weightsize 0.14
+save data
+Seed 16 (4.6%) gen 207 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 46.01 avg 26.02 weightsize 0.14
+save data
+Seed 16 (4.6%) gen 208 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 45.74 avg 28.65 weightsize 0.14
+save data
+Seed 16 (4.7%) gen 209 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 46.78 avg 33.93 weightsize 0.14
+save data
+Seed 16 (4.7%) gen 210 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 46.48 avg 31.92 weightsize 0.14
+save data
+Seed 16 (4.7%) gen 211 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 50.63 avg 37.32 weightsize 0.14
+save data
+Seed 16 (4.8%) gen 212 msteps 2 bestfit 51.75 bestgfit 45.87 bestsam 45.23 avg 35.35 weightsize 0.14
+save data
+Seed 16 (4.8%) gen 213 msteps 2 bestfit 54.08 bestgfit 45.87 bestsam 54.08 avg 31.38 weightsize 0.14
+save data
+Seed 16 (4.9%) gen 214 msteps 2 bestfit 54.08 bestgfit 45.87 bestsam 47.92 avg 35.31 weightsize 0.14
+save data
+Seed 16 (4.9%) gen 215 msteps 2 bestfit 54.08 bestgfit 45.87 bestsam 53.71 avg 36.13 weightsize 0.14
+save data
+Seed 16 (4.9%) gen 216 msteps 2 bestfit 54.08 bestgfit 45.87 bestsam 52.42 avg 39.36 weightsize 0.15
+save data
+Seed 16 (5.0%) gen 217 msteps 2 bestfit 54.08 bestgfit 45.87 bestsam 48.97 avg 37.75 weightsize 0.15
+save data
+Seed 16 (5.0%) gen 218 msteps 2 bestfit 54.08 bestgfit 45.87 bestsam 50.58 avg 39.24 weightsize 0.15
+save data
+Seed 16 (5.0%) gen 219 msteps 2 bestfit 54.08 bestgfit 48.22 bestsam 51.63 avg 42.18 weightsize 0.15
+save data
+Seed 16 (5.1%) gen 220 msteps 2 bestfit 54.20 bestgfit 48.22 bestsam 54.20 avg 42.00 weightsize 0.15
+save data
+Seed 16 (5.1%) gen 221 msteps 2 bestfit 56.73 bestgfit 48.22 bestsam 56.73 avg 42.66 weightsize 0.15
+save data
+Seed 16 (5.1%) gen 222 msteps 2 bestfit 58.27 bestgfit 56.12 bestsam 58.27 avg 38.68 weightsize 0.15
+save data
+Seed 16 (5.2%) gen 223 msteps 2 bestfit 58.27 bestgfit 56.12 bestsam 55.64 avg 34.02 weightsize 0.15
+save data
+Seed 16 (5.2%) gen 224 msteps 2 bestfit 60.40 bestgfit 56.12 bestsam 60.40 avg 45.33 weightsize 0.15
+save data
+Seed 16 (5.3%) gen 225 msteps 2 bestfit 62.32 bestgfit 56.12 bestsam 62.32 avg 43.24 weightsize 0.15
+save data
+Seed 16 (5.3%) gen 226 msteps 2 bestfit 62.32 bestgfit 56.12 bestsam 58.25 avg 36.26 weightsize 0.15
+save data
+Seed 16 (5.4%) gen 227 msteps 2 bestfit 62.49 bestgfit 56.12 bestsam 62.49 avg 41.57 weightsize 0.15
+save data
+Seed 16 (5.4%) gen 228 msteps 2 bestfit 62.49 bestgfit 56.12 bestsam 60.39 avg 38.98 weightsize 0.15
+save data
+Seed 16 (5.5%) gen 229 msteps 2 bestfit 62.49 bestgfit 56.12 bestsam 60.55 avg 42.18 weightsize 0.15
+save data
+Seed 16 (5.5%) gen 230 msteps 2 bestfit 62.49 bestgfit 56.12 bestsam 60.41 avg 40.14 weightsize 0.15
+save data
+Seed 16 (5.6%) gen 231 msteps 2 bestfit 63.70 bestgfit 56.12 bestsam 63.70 avg 42.44 weightsize 0.15
+save data
+Seed 16 (5.7%) gen 232 msteps 2 bestfit 63.70 bestgfit 56.12 bestsam 62.50 avg 34.24 weightsize 0.15
+save data
+Seed 16 (5.7%) gen 233 msteps 2 bestfit 63.70 bestgfit 56.12 bestsam 59.66 avg 46.41 weightsize 0.15
+save data
+Seed 16 (5.7%) gen 234 msteps 2 bestfit 63.70 bestgfit 56.12 bestsam 62.84 avg 48.42 weightsize 0.15
+save data
+Seed 16 (5.8%) gen 235 msteps 2 bestfit 64.19 bestgfit 56.12 bestsam 64.19 avg 50.57 weightsize 0.15
+save data
+Seed 16 (5.8%) gen 236 msteps 2 bestfit 64.19 bestgfit 56.12 bestsam 62.20 avg 47.37 weightsize 0.15
+save data
+Seed 16 (5.9%) gen 237 msteps 2 bestfit 65.74 bestgfit 56.12 bestsam 65.74 avg 38.23 weightsize 0.15
+save data
+Seed 16 (5.9%) gen 238 msteps 2 bestfit 65.74 bestgfit 56.12 bestsam 63.88 avg 53.75 weightsize 0.15
+save data
+Seed 16 (6.0%) gen 239 msteps 2 bestfit 74.08 bestgfit 60.97 bestsam 74.08 avg 48.92 weightsize 0.15
+save data
+Seed 16 (6.0%) gen 240 msteps 3 bestfit 74.08 bestgfit 60.97 bestsam 69.48 avg 50.85 weightsize 0.15
+save data
+Seed 16 (6.1%) gen 241 msteps 3 bestfit 74.08 bestgfit 60.97 bestsam 69.26 avg 49.76 weightsize 0.15
+save data
+Seed 16 (6.1%) gen 242 msteps 3 bestfit 74.08 bestgfit 63.98 bestsam 71.22 avg 56.52 weightsize 0.15
+save data
+Seed 16 (6.2%) gen 243 msteps 3 bestfit 77.75 bestgfit 63.98 bestsam 77.75 avg 56.27 weightsize 0.15
+save data
+Seed 16 (6.2%) gen 244 msteps 3 bestfit 77.75 bestgfit 63.98 bestsam 73.79 avg 56.99 weightsize 0.15
+save data
+Seed 16 (6.3%) gen 245 msteps 3 bestfit 77.75 bestgfit 63.98 bestsam 71.85 avg 53.55 weightsize 0.15
+save data
+Seed 16 (6.3%) gen 246 msteps 3 bestfit 77.75 bestgfit 64.36 bestsam 75.94 avg 53.55 weightsize 0.15
+save data
+Seed 16 (6.4%) gen 247 msteps 3 bestfit 77.75 bestgfit 64.36 bestsam 76.91 avg 59.94 weightsize 0.15
+save data
+Seed 16 (6.5%) gen 248 msteps 3 bestfit 79.09 bestgfit 64.36 bestsam 79.09 avg 55.54 weightsize 0.15
+save data
+Seed 16 (6.5%) gen 249 msteps 3 bestfit 82.02 bestgfit 66.72 bestsam 82.02 avg 60.79 weightsize 0.15
+save data
+Seed 16 (6.6%) gen 250 msteps 3 bestfit 86.12 bestgfit 66.72 bestsam 86.12 avg 59.85 weightsize 0.15
+save data
+Seed 16 (6.6%) gen 251 msteps 3 bestfit 86.12 bestgfit 71.62 bestsam 77.91 avg 62.19 weightsize 0.15
+save data
+Seed 16 (6.7%) gen 252 msteps 3 bestfit 86.12 bestgfit 71.62 bestsam 78.23 avg 50.69 weightsize 0.15
+save data
+Seed 16 (6.7%) gen 253 msteps 3 bestfit 86.12 bestgfit 71.62 bestsam 80.41 avg 64.64 weightsize 0.15
+save data
+Seed 16 (6.8%) gen 254 msteps 3 bestfit 86.12 bestgfit 71.62 bestsam 81.67 avg 64.36 weightsize 0.15
+save data
+Seed 16 (6.8%) gen 255 msteps 3 bestfit 86.12 bestgfit 71.62 bestsam 75.66 avg 55.94 weightsize 0.15
+save data
+Seed 16 (6.9%) gen 256 msteps 3 bestfit 86.12 bestgfit 71.62 bestsam 85.74 avg 62.98 weightsize 0.15
+save data
+Seed 16 (6.9%) gen 257 msteps 3 bestfit 86.12 bestgfit 74.14 bestsam 83.63 avg 66.53 weightsize 0.15
+save data
+Seed 16 (7.0%) gen 258 msteps 3 bestfit 86.12 bestgfit 74.14 bestsam 84.84 avg 66.17 weightsize 0.15
+save data
+Seed 16 (7.0%) gen 259 msteps 3 bestfit 86.12 bestgfit 74.14 bestsam 85.84 avg 61.93 weightsize 0.15
+save data
+Seed 16 (7.1%) gen 260 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 86.72 avg 61.31 weightsize 0.15
+save data
+Seed 16 (7.2%) gen 261 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 85.06 avg 58.97 weightsize 0.15
+save data
+Seed 16 (7.2%) gen 262 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 82.03 avg 62.23 weightsize 0.15
+save data
+Seed 16 (7.3%) gen 263 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 82.80 avg 61.26 weightsize 0.15
+save data
+Seed 16 (7.3%) gen 264 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 86.20 avg 63.90 weightsize 0.15
+save data
+Seed 16 (7.4%) gen 265 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 83.16 avg 62.60 weightsize 0.15
+save data
+Seed 16 (7.4%) gen 266 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 85.06 avg 67.58 weightsize 0.15
+save data
+Seed 16 (7.5%) gen 267 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 85.03 avg 61.68 weightsize 0.15
+save data
+Seed 16 (7.5%) gen 268 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 86.18 avg 64.52 weightsize 0.15
+save data
+Seed 16 (7.6%) gen 269 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 85.84 avg 64.69 weightsize 0.15
+save data
+Seed 16 (7.6%) gen 270 msteps 3 bestfit 86.72 bestgfit 74.14 bestsam 85.97 avg 64.47 weightsize 0.15
+save data
+Seed 16 (7.7%) gen 271 msteps 3 bestfit 86.72 bestgfit 79.46 bestsam 84.03 avg 65.22 weightsize 0.15
+save data
+Seed 16 (7.7%) gen 272 msteps 3 bestfit 90.10 bestgfit 79.46 bestsam 90.10 avg 69.96 weightsize 0.15
+save data
+Seed 16 (7.8%) gen 273 msteps 3 bestfit 90.10 bestgfit 79.46 bestsam 84.61 avg 64.97 weightsize 0.15
+save data
+Seed 16 (7.8%) gen 274 msteps 3 bestfit 90.10 bestgfit 79.46 bestsam 83.70 avg 65.14 weightsize 0.15
+save data
+Seed 16 (7.9%) gen 275 msteps 3 bestfit 90.10 bestgfit 79.46 bestsam 84.24 avg 67.18 weightsize 0.15
+save data
+Seed 16 (7.9%) gen 276 msteps 3 bestfit 90.10 bestgfit 79.46 bestsam 86.27 avg 72.02 weightsize 0.15
+save data
+Seed 16 (8.0%) gen 277 msteps 3 bestfit 90.10 bestgfit 79.46 bestsam 84.08 avg 69.67 weightsize 0.15
+save data
+Seed 16 (8.0%) gen 278 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 92.26 avg 67.36 weightsize 0.15
+save data
+Seed 16 (8.1%) gen 279 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 83.70 avg 66.73 weightsize 0.15
+save data
+Seed 16 (8.1%) gen 280 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 85.85 avg 64.72 weightsize 0.15
+save data
+Seed 16 (8.2%) gen 281 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 84.03 avg 66.34 weightsize 0.15
+save data
+Seed 16 (8.2%) gen 282 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 85.03 avg 67.96 weightsize 0.15
+save data
+Seed 16 (8.3%) gen 283 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 89.91 avg 64.33 weightsize 0.15
+save data
+Seed 16 (8.3%) gen 284 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 86.99 avg 67.71 weightsize 0.15
+save data
+Seed 16 (8.4%) gen 285 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 87.23 avg 64.54 weightsize 0.15
+save data
+Seed 16 (8.4%) gen 286 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 83.52 avg 64.18 weightsize 0.15
+save data
+Seed 16 (8.5%) gen 287 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 85.59 avg 58.35 weightsize 0.15
+save data
+Seed 16 (8.6%) gen 288 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 86.95 avg 63.73 weightsize 0.15
+save data
+Seed 16 (8.6%) gen 289 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 87.13 avg 55.14 weightsize 0.15
+save data
+Seed 16 (8.7%) gen 290 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 77.98 avg 59.34 weightsize 0.15
+save data
+Seed 16 (8.7%) gen 291 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 85.27 avg 61.91 weightsize 0.15
+save data
+Seed 16 (8.8%) gen 292 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 86.80 avg 60.11 weightsize 0.15
+save data
+Seed 16 (8.9%) gen 293 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 86.20 avg 57.30 weightsize 0.15
+save data
+Seed 16 (8.9%) gen 294 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 88.28 avg 60.62 weightsize 0.15
+save data
+Seed 16 (9.0%) gen 295 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 83.81 avg 57.31 weightsize 0.15
+save data
+Seed 16 (9.1%) gen 296 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 86.77 avg 58.92 weightsize 0.15
+save data
+Seed 16 (9.1%) gen 297 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 86.57 avg 53.21 weightsize 0.15
+save data
+Seed 16 (9.2%) gen 298 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 88.88 avg 60.47 weightsize 0.15
+save data
+Seed 16 (9.2%) gen 299 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 84.09 avg 59.39 weightsize 0.15
+save data
+Seed 16 (9.3%) gen 300 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 85.72 avg 60.61 weightsize 0.15
+save data
+Seed 16 (9.4%) gen 301 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 84.21 avg 45.64 weightsize 0.15
+save data
+Seed 16 (9.4%) gen 302 msteps 4 bestfit 92.26 bestgfit 79.46 bestsam 83.75 avg 51.77 weightsize 0.15
+save data
+Seed 16 (9.5%) gen 303 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 88.49 avg 55.71 weightsize 0.15
+save data
+Seed 16 (9.6%) gen 304 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 81.72 avg 57.34 weightsize 0.15
+save data
+Seed 16 (9.6%) gen 305 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 85.87 avg 63.92 weightsize 0.15
+save data
+Seed 16 (9.7%) gen 306 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 83.25 avg 57.60 weightsize 0.15
+save data
+Seed 16 (9.7%) gen 307 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 83.97 avg 57.84 weightsize 0.15
+save data
+Seed 16 (9.8%) gen 308 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 84.47 avg 63.13 weightsize 0.15
+save data
+Seed 16 (9.8%) gen 309 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 84.76 avg 64.59 weightsize 0.15
+save data
+Seed 16 (9.9%) gen 310 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 87.13 avg 59.37 weightsize 0.15
+save data
+Seed 16 (9.9%) gen 311 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 91.54 avg 68.33 weightsize 0.15
+save data
+Seed 16 (10.0%) gen 312 msteps 4 bestfit 92.26 bestgfit 81.52 bestsam 90.66 avg 65.92 weightsize 0.15
+actual_step = 10.0 %
+step_size = 10.0 %
+max_fitness_weight = 44.45
+avg_fitness_weight = 55.55
+min_fitness_weight = 0.0
+save data
+Seed 16 (10.0%) gen 313 msteps 5 bestfit 92.26 bestgfit 81.52 bestsam 80.98 avg 58.28 weightsize 0.15
+save data
+Seed 16 (10.1%) gen 314 msteps 5 bestfit 92.26 bestgfit 81.52 bestsam 85.33 avg 66.46 weightsize 0.15
+save data
+Seed 16 (10.1%) gen 315 msteps 5 bestfit 92.26 bestgfit 81.52 bestsam 87.10 avg 64.41 weightsize 0.15
+save data
+Seed 16 (10.2%) gen 316 msteps 5 bestfit 92.26 bestgfit 81.52 bestsam 86.43 avg 65.38 weightsize 0.15
+save data
+Seed 16 (10.2%) gen 317 msteps 5 bestfit 92.26 bestgfit 81.52 bestsam 80.80 avg 61.58 weightsize 0.15
+save data
+Seed 16 (10.3%) gen 318 msteps 5 bestfit 92.26 bestgfit 81.62 bestsam 85.73 avg 54.80 weightsize 0.15
+save data
+Seed 16 (10.4%) gen 319 msteps 5 bestfit 92.26 bestgfit 81.62 bestsam 86.17 avg 58.09 weightsize 0.15
+save data
+Seed 16 (10.4%) gen 320 msteps 5 bestfit 92.26 bestgfit 81.62 bestsam 90.57 avg 63.88 weightsize 0.15
+save data
+Seed 16 (10.5%) gen 321 msteps 5 bestfit 93.25 bestgfit 81.62 bestsam 93.25 avg 64.45 weightsize 0.15
+save data
+Seed 16 (10.5%) gen 322 msteps 5 bestfit 93.25 bestgfit 81.62 bestsam 81.72 avg 60.57 weightsize 0.15
+save data
+Seed 16 (10.6%) gen 323 msteps 5 bestfit 93.25 bestgfit 81.62 bestsam 83.90 avg 64.06 weightsize 0.15
+save data
+Seed 16 (10.6%) gen 324 msteps 5 bestfit 93.25 bestgfit 81.62 bestsam 92.90 avg 62.13 weightsize 0.15
+save data
+Seed 16 (10.7%) gen 325 msteps 5 bestfit 93.25 bestgfit 81.62 bestsam 87.98 avg 60.19 weightsize 0.15
+save data
+Seed 16 (10.7%) gen 326 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 84.69 avg 69.89 weightsize 0.15
+save data
+Seed 16 (10.8%) gen 327 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 90.52 avg 64.28 weightsize 0.15
+save data
+Seed 16 (10.8%) gen 328 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 90.52 avg 68.14 weightsize 0.15
+save data
+Seed 16 (10.9%) gen 329 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 82.99 avg 53.56 weightsize 0.15
+save data
+Seed 16 (10.9%) gen 330 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 88.66 avg 67.64 weightsize 0.15
+save data
+Seed 16 (11.0%) gen 331 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 82.64 avg 63.99 weightsize 0.15
+save data
+Seed 16 (11.0%) gen 332 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 82.10 avg 62.37 weightsize 0.15
+save data
+Seed 16 (11.1%) gen 333 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 84.58 avg 66.16 weightsize 0.15
+save data
+Seed 16 (11.1%) gen 334 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 84.50 avg 65.77 weightsize 0.15
+save data
+Seed 16 (11.2%) gen 335 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 81.30 avg 63.47 weightsize 0.15
+save data
+Seed 16 (11.2%) gen 336 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 84.80 avg 67.10 weightsize 0.15
+save data
+Seed 16 (11.3%) gen 337 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 88.64 avg 70.33 weightsize 0.15
+save data
+Seed 16 (11.3%) gen 338 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 90.37 avg 66.94 weightsize 0.15
+save data
+Seed 16 (11.4%) gen 339 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 85.68 avg 68.05 weightsize 0.15
+save data
+Seed 16 (11.4%) gen 340 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 85.38 avg 63.91 weightsize 0.15
+save data
+Seed 16 (11.5%) gen 341 msteps 5 bestfit 93.25 bestgfit 82.06 bestsam 84.85 avg 62.95 weightsize 0.15
+save data
+Seed 16 (11.6%) gen 342 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 100.47 avg 58.40 weightsize 0.15
+save data
+Seed 16 (11.6%) gen 343 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 81.49 avg 65.28 weightsize 0.15
+save data
+Seed 16 (11.7%) gen 344 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 81.41 avg 63.78 weightsize 0.15
+save data
+Seed 16 (11.7%) gen 345 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 85.20 avg 67.93 weightsize 0.15
+save data
+Seed 16 (11.8%) gen 346 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 83.47 avg 65.80 weightsize 0.15
+save data
+Seed 16 (11.8%) gen 347 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 85.22 avg 66.71 weightsize 0.15
+save data
+Seed 16 (11.9%) gen 348 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 87.23 avg 69.92 weightsize 0.15
+save data
+Seed 16 (11.9%) gen 349 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 80.09 avg 64.94 weightsize 0.15
+save data
+Seed 16 (12.0%) gen 350 msteps 5 bestfit 100.47 bestgfit 82.06 bestsam 83.08 avg 66.00 weightsize 0.15
+save data
+Seed 16 (12.0%) gen 351 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 83.96 avg 66.72 weightsize 0.15
+save data
+Seed 16 (12.1%) gen 352 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 87.14 avg 69.62 weightsize 0.15
+save data
+Seed 16 (12.1%) gen 353 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 87.81 avg 65.72 weightsize 0.15
+save data
+Seed 16 (12.2%) gen 354 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 89.39 avg 70.15 weightsize 0.15
+save data
+Seed 16 (12.3%) gen 355 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 90.76 avg 67.24 weightsize 0.15
+save data
+Seed 16 (12.3%) gen 356 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 92.66 avg 70.80 weightsize 0.15
+save data
+Seed 16 (12.4%) gen 357 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 86.98 avg 68.55 weightsize 0.15
+save data
+Seed 16 (12.4%) gen 358 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 98.95 avg 63.49 weightsize 0.15
+save data
+Seed 16 (12.5%) gen 359 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 91.07 avg 66.19 weightsize 0.15
+save data
+Seed 16 (12.5%) gen 360 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 86.83 avg 70.86 weightsize 0.15
+save data
+Seed 16 (12.6%) gen 361 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 90.48 avg 64.55 weightsize 0.16
+save data
+Seed 16 (12.6%) gen 362 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 87.67 avg 68.77 weightsize 0.16
+save data
+Seed 16 (12.7%) gen 363 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 92.12 avg 65.04 weightsize 0.16
+save data
+Seed 16 (12.8%) gen 364 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 89.00 avg 62.87 weightsize 0.16
+save data
+Seed 16 (12.8%) gen 365 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 93.45 avg 70.33 weightsize 0.16
+save data
+Seed 16 (12.9%) gen 366 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 87.97 avg 68.69 weightsize 0.16
+save data
+Seed 16 (12.9%) gen 367 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 88.38 avg 64.19 weightsize 0.16
+save data
+Seed 16 (13.0%) gen 368 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 89.41 avg 68.53 weightsize 0.16
+save data
+Seed 16 (13.0%) gen 369 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 94.04 avg 72.15 weightsize 0.16
+save data
+Seed 16 (13.1%) gen 370 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 96.53 avg 70.36 weightsize 0.16
+save data
+Seed 16 (13.2%) gen 371 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 85.47 avg 68.28 weightsize 0.16
+save data
+Seed 16 (13.2%) gen 372 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 90.46 avg 70.36 weightsize 0.16
+save data
+Seed 16 (13.3%) gen 373 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 90.01 avg 72.83 weightsize 0.16
+save data
+Seed 16 (13.3%) gen 374 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 91.05 avg 71.64 weightsize 0.16
+save data
+Seed 16 (13.4%) gen 375 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 92.38 avg 70.94 weightsize 0.16
+save data
+Seed 16 (13.4%) gen 376 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 93.59 avg 74.33 weightsize 0.16
+save data
+Seed 16 (13.5%) gen 377 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 85.15 avg 70.40 weightsize 0.16
+save data
+Seed 16 (13.5%) gen 378 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 87.08 avg 67.79 weightsize 0.16
+save data
+Seed 16 (13.6%) gen 379 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 85.68 avg 70.39 weightsize 0.16
+save data
+Seed 16 (13.7%) gen 380 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 89.02 avg 65.76 weightsize 0.16
+save data
+Seed 16 (13.7%) gen 381 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 91.27 avg 69.92 weightsize 0.16
+save data
+Seed 16 (13.8%) gen 382 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 86.32 avg 61.22 weightsize 0.16
+save data
+Seed 16 (13.8%) gen 383 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 91.00 avg 64.33 weightsize 0.16
+save data
+Seed 16 (13.9%) gen 384 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 89.34 avg 62.60 weightsize 0.16
+save data
+Seed 16 (14.0%) gen 385 msteps 6 bestfit 100.47 bestgfit 82.06 bestsam 89.20 avg 64.06 weightsize 0.16
+save data
+Seed 16 (14.0%) gen 386 msteps 7 bestfit 100.47 bestgfit 82.06 bestsam 90.00 avg 63.90 weightsize 0.16
+save data
+Seed 16 (14.1%) gen 387 msteps 7 bestfit 100.47 bestgfit 82.06 bestsam 87.91 avg 65.19 weightsize 0.16
+save data
+Seed 16 (14.2%) gen 388 msteps 7 bestfit 100.47 bestgfit 82.06 bestsam 91.55 avg 61.13 weightsize 0.16
+save data
+Seed 16 (14.2%) gen 389 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 90.79 avg 71.55 weightsize 0.16
+save data
+Seed 16 (14.3%) gen 390 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.44 avg 44.51 weightsize 0.16
+save data
+Seed 16 (14.4%) gen 391 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.67 avg 65.65 weightsize 0.16
+save data
+Seed 16 (14.5%) gen 392 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 85.22 avg 65.45 weightsize 0.16
+save data
+Seed 16 (14.5%) gen 393 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.46 avg 66.33 weightsize 0.16
+save data
+Seed 16 (14.6%) gen 394 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.02 avg 68.31 weightsize 0.16
+save data
+Seed 16 (14.6%) gen 395 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 86.03 avg 70.23 weightsize 0.16
+save data
+Seed 16 (14.7%) gen 396 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 80.62 avg 70.72 weightsize 0.16
+save data
+Seed 16 (14.8%) gen 397 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 85.24 avg 73.56 weightsize 0.16
+save data
+Seed 16 (14.8%) gen 398 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 86.86 avg 69.59 weightsize 0.16
+save data
+Seed 16 (14.9%) gen 399 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.04 avg 69.05 weightsize 0.16
+save data
+Seed 16 (14.9%) gen 400 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.32 avg 69.41 weightsize 0.16
+save data
+Seed 16 (15.0%) gen 401 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 84.56 avg 69.68 weightsize 0.16
+save data
+Seed 16 (15.1%) gen 402 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 85.89 avg 70.58 weightsize 0.16
+save data
+Seed 16 (15.1%) gen 403 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 86.55 avg 72.89 weightsize 0.16
+save data
+Seed 16 (15.2%) gen 404 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 91.88 avg 74.13 weightsize 0.16
+save data
+Seed 16 (15.2%) gen 405 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 92.25 avg 71.30 weightsize 0.16
+save data
+Seed 16 (15.3%) gen 406 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 88.52 avg 72.41 weightsize 0.16
+save data
+Seed 16 (15.3%) gen 407 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 87.77 avg 73.09 weightsize 0.16
+save data
+Seed 16 (15.4%) gen 408 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 86.92 avg 73.35 weightsize 0.16
+save data
+Seed 16 (15.4%) gen 409 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 93.15 avg 74.16 weightsize 0.16
+save data
+Seed 16 (15.5%) gen 410 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 88.67 avg 71.31 weightsize 0.16
+save data
+Seed 16 (15.6%) gen 411 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 95.03 avg 71.02 weightsize 0.16
+save data
+Seed 16 (15.6%) gen 412 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 97.36 avg 68.24 weightsize 0.16
+save data
+Seed 16 (15.7%) gen 413 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 92.79 avg 70.43 weightsize 0.16
+save data
+Seed 16 (15.7%) gen 414 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 92.04 avg 72.92 weightsize 0.16
+save data
+Seed 16 (15.8%) gen 415 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 92.64 avg 75.84 weightsize 0.16
+save data
+Seed 16 (15.9%) gen 416 msteps 7 bestfit 100.47 bestgfit 88.55 bestsam 97.30 avg 77.26 weightsize 0.16
+save data
+Seed 16 (15.9%) gen 417 msteps 7 bestfit 102.06 bestgfit 88.55 bestsam 102.06 avg 81.00 weightsize 0.16
+save data
+Seed 16 (16.0%) gen 418 msteps 7 bestfit 102.06 bestgfit 88.55 bestsam 99.16 avg 80.22 weightsize 0.16
+save data
+Seed 16 (16.0%) gen 419 msteps 8 bestfit 102.06 bestgfit 88.55 bestsam 97.88 avg 79.98 weightsize 0.16
+save data
+Seed 16 (16.1%) gen 420 msteps 8 bestfit 111.77 bestgfit 88.55 bestsam 111.77 avg 80.52 weightsize 0.16
+save data
+Seed 16 (16.1%) gen 421 msteps 8 bestfit 111.77 bestgfit 88.55 bestsam 104.54 avg 76.79 weightsize 0.16
+save data
+Seed 16 (16.2%) gen 422 msteps 8 bestfit 113.76 bestgfit 88.55 bestsam 113.76 avg 78.82 weightsize 0.16
+save data
+Seed 16 (16.3%) gen 423 msteps 8 bestfit 113.76 bestgfit 88.55 bestsam 105.34 avg 82.31 weightsize 0.16
+save data
+Seed 16 (16.3%) gen 424 msteps 8 bestfit 132.31 bestgfit 102.02 bestsam 132.31 avg 85.06 weightsize 0.16
+save data
+Seed 16 (16.4%) gen 425 msteps 8 bestfit 132.31 bestgfit 102.02 bestsam 110.25 avg 84.70 weightsize 0.16
+save data
+Seed 16 (16.4%) gen 426 msteps 8 bestfit 132.31 bestgfit 102.02 bestsam 117.72 avg 89.11 weightsize 0.16
+save data
+Seed 16 (16.5%) gen 427 msteps 8 bestfit 135.23 bestgfit 102.02 bestsam 135.23 avg 92.53 weightsize 0.16
+save data
+Seed 16 (16.6%) gen 428 msteps 8 bestfit 143.08 bestgfit 102.02 bestsam 143.08 avg 99.12 weightsize 0.16
+save data
+Seed 16 (16.6%) gen 429 msteps 8 bestfit 145.47 bestgfit 102.02 bestsam 145.47 avg 98.74 weightsize 0.16
+save data
+Seed 16 (16.7%) gen 430 msteps 8 bestfit 165.32 bestgfit 111.83 bestsam 165.32 avg 97.97 weightsize 0.16
+save data
+Seed 16 (16.8%) gen 431 msteps 8 bestfit 165.32 bestgfit 111.83 bestsam 133.81 avg 104.74 weightsize 0.16
+save data
+Seed 16 (16.8%) gen 432 msteps 8 bestfit 165.32 bestgfit 111.83 bestsam 150.19 avg 108.13 weightsize 0.16
+save data
+Seed 16 (16.9%) gen 433 msteps 8 bestfit 172.06 bestgfit 111.83 bestsam 172.06 avg 107.81 weightsize 0.16
+save data
+Seed 16 (17.0%) gen 434 msteps 8 bestfit 172.06 bestgfit 111.83 bestsam 159.34 avg 114.56 weightsize 0.16
+save data
+Seed 16 (17.1%) gen 435 msteps 8 bestfit 172.06 bestgfit 116.92 bestsam 150.01 avg 108.29 weightsize 0.16
+save data
+Seed 16 (17.1%) gen 436 msteps 8 bestfit 172.06 bestgfit 147.99 bestsam 153.71 avg 110.34 weightsize 0.16
+save data
+Seed 16 (17.2%) gen 437 msteps 8 bestfit 172.06 bestgfit 147.99 bestsam 163.29 avg 123.81 weightsize 0.16
+save data
+Seed 16 (17.3%) gen 438 msteps 8 bestfit 197.10 bestgfit 147.99 bestsam 197.10 avg 125.11 weightsize 0.16
+save data
+Seed 16 (17.4%) gen 439 msteps 8 bestfit 197.10 bestgfit 147.99 bestsam 181.13 avg 122.25 weightsize 0.16
+save data
+Seed 16 (17.5%) gen 440 msteps 8 bestfit 213.75 bestgfit 147.99 bestsam 213.75 avg 118.46 weightsize 0.16
+save data
+Seed 16 (17.5%) gen 441 msteps 8 bestfit 213.75 bestgfit 147.99 bestsam 211.60 avg 117.57 weightsize 0.16
+save data
+Seed 16 (17.6%) gen 442 msteps 8 bestfit 213.75 bestgfit 147.99 bestsam 171.78 avg 127.00 weightsize 0.16
+save data
+Seed 16 (17.7%) gen 443 msteps 8 bestfit 213.75 bestgfit 147.99 bestsam 197.32 avg 123.53 weightsize 0.16
+save data
+Seed 16 (17.8%) gen 444 msteps 8 bestfit 213.75 bestgfit 147.99 bestsam 185.99 avg 126.44 weightsize 0.16
+save data
+Seed 16 (17.9%) gen 445 msteps 8 bestfit 213.75 bestgfit 152.89 bestsam 177.12 avg 119.60 weightsize 0.16
+save data
+Seed 16 (18.0%) gen 446 msteps 8 bestfit 215.98 bestgfit 152.89 bestsam 215.98 avg 127.22 weightsize 0.16
+save data
+Seed 16 (18.0%) gen 447 msteps 9 bestfit 259.97 bestgfit 152.89 bestsam 259.97 avg 130.61 weightsize 0.16
+save data
+Seed 16 (18.1%) gen 448 msteps 9 bestfit 259.97 bestgfit 152.89 bestsam 202.44 avg 130.45 weightsize 0.16
+save data
+Seed 16 (18.2%) gen 449 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 266.73 avg 123.71 weightsize 0.16
+save data
+Seed 16 (18.3%) gen 450 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 177.42 avg 117.83 weightsize 0.16
+save data
+Seed 16 (18.4%) gen 451 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 188.12 avg 136.65 weightsize 0.16
+save data
+Seed 16 (18.5%) gen 452 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 219.07 avg 127.01 weightsize 0.16
+save data
+Seed 16 (18.6%) gen 453 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 201.44 avg 129.37 weightsize 0.16
+save data
+Seed 16 (18.7%) gen 454 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 237.05 avg 133.92 weightsize 0.16
+save data
+Seed 16 (18.7%) gen 455 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 196.86 avg 131.85 weightsize 0.16
+save data
+Seed 16 (18.8%) gen 456 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 219.56 avg 138.67 weightsize 0.16
+save data
+Seed 16 (18.9%) gen 457 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 198.97 avg 139.57 weightsize 0.16
+save data
+Seed 16 (19.0%) gen 458 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 257.94 avg 149.68 weightsize 0.16
+save data
+Seed 16 (19.1%) gen 459 msteps 9 bestfit 266.73 bestgfit 152.89 bestsam 254.57 avg 156.25 weightsize 0.16
+save data
+Seed 16 (19.2%) gen 460 msteps 9 bestfit 266.73 bestgfit 162.12 bestsam 243.87 avg 163.08 weightsize 0.16
+save data
+Seed 16 (19.3%) gen 461 msteps 9 bestfit 304.69 bestgfit 162.12 bestsam 304.69 avg 174.13 weightsize 0.16
+save data
+Seed 16 (19.4%) gen 462 msteps 9 bestfit 444.96 bestgfit 227.08 bestsam 444.96 avg 182.21 weightsize 0.16
+save data
+Seed 16 (19.5%) gen 463 msteps 9 bestfit 444.96 bestgfit 227.08 bestsam 278.61 avg 206.78 weightsize 0.16
+save data
+Seed 16 (19.6%) gen 464 msteps 9 bestfit 444.96 bestgfit 227.08 bestsam 298.12 avg 209.38 weightsize 0.16
+save data
+Seed 16 (19.7%) gen 465 msteps 9 bestfit 496.09 bestgfit 326.63 bestsam 496.09 avg 229.54 weightsize 0.17
+save data
+Seed 16 (19.9%) gen 466 msteps 9 bestfit 528.03 bestgfit 369.29 bestsam 528.03 avg 288.06 weightsize 0.17
+actual_step = 20.0 %
+step_size = 10.0 %
+max_fitness_weight = 38.9
+avg_fitness_weight = 61.1
+min_fitness_weight = 0.0
+save data
+Seed 16 (20.0%) gen 467 msteps 10 bestfit 595.09 bestgfit 369.29 bestsam 595.09 avg 323.61 weightsize 0.17
+save data
+Seed 16 (20.2%) gen 468 msteps 10 bestfit 701.53 bestgfit 414.51 bestsam 701.53 avg 371.70 weightsize 0.17
+save data
+Seed 16 (20.5%) gen 469 msteps 10 bestfit 719.58 bestgfit 651.08 bestsam 719.58 avg 478.81 weightsize 0.17
+save data
+Seed 16 (20.7%) gen 470 msteps 10 bestfit 728.86 bestgfit 651.08 bestsam 728.86 avg 487.39 weightsize 0.17
+save data
+Seed 16 (21.0%) gen 471 msteps 10 bestfit 884.03 bestgfit 758.39 bestsam 884.03 avg 582.44 weightsize 0.17
+save data
+Seed 16 (21.3%) gen 472 msteps 10 bestfit 884.03 bestgfit 758.39 bestsam 858.41 avg 606.93 weightsize 0.17
+save data
+Seed 16 (21.6%) gen 473 msteps 10 bestfit 907.12 bestgfit 758.39 bestsam 907.12 avg 673.54 weightsize 0.17
+save data
+Seed 16 (22.0%) gen 474 msteps 10 bestfit 907.12 bestgfit 813.78 bestsam 893.58 avg 664.25 weightsize 0.17
+save data
+Seed 16 (22.3%) gen 475 msteps 11 bestfit 907.12 bestgfit 813.78 bestsam 895.17 avg 706.00 weightsize 0.17
+save data
+Seed 16 (22.7%) gen 476 msteps 11 bestfit 915.24 bestgfit 820.65 bestsam 915.24 avg 663.23 weightsize 0.17
+save data
+Seed 16 (23.1%) gen 477 msteps 11 bestfit 928.70 bestgfit 861.38 bestsam 928.70 avg 677.24 weightsize 0.17
+save data
+Seed 16 (23.4%) gen 478 msteps 11 bestfit 928.70 bestgfit 861.38 bestsam 920.86 avg 704.66 weightsize 0.17
+save data
+Seed 16 (23.8%) gen 479 msteps 11 bestfit 958.01 bestgfit 861.38 bestsam 958.01 avg 761.78 weightsize 0.17
+save data
+Seed 16 (24.2%) gen 480 msteps 12 bestfit 958.01 bestgfit 861.38 bestsam 916.85 avg 706.19 weightsize 0.17
+save data
+Seed 16 (24.6%) gen 481 msteps 12 bestfit 996.34 bestgfit 939.57 bestsam 996.34 avg 683.92 weightsize 0.17
+save data
+Seed 16 (25.0%) gen 482 msteps 12 bestfit 996.34 bestgfit 939.57 bestsam 967.12 avg 748.15 weightsize 0.17
+save data
+Seed 16 (25.3%) gen 483 msteps 12 bestfit 996.34 bestgfit 939.57 bestsam 930.02 avg 795.14 weightsize 0.17
+save data
+Seed 16 (25.7%) gen 484 msteps 12 bestfit 996.34 bestgfit 939.57 bestsam 980.38 avg 823.49 weightsize 0.17
+save data
+Seed 16 (26.1%) gen 485 msteps 13 bestfit 996.66 bestgfit 939.57 bestsam 996.66 avg 794.36 weightsize 0.17
+save data
+Seed 16 (26.5%) gen 486 msteps 13 bestfit 1023.78 bestgfit 939.57 bestsam 1023.78 avg 828.13 weightsize 0.17
+save data
+Seed 16 (26.9%) gen 487 msteps 13 bestfit 1023.78 bestgfit 939.57 bestsam 988.28 avg 831.80 weightsize 0.17
+save data
+Seed 16 (27.3%) gen 488 msteps 13 bestfit 1023.78 bestgfit 939.57 bestsam 1017.76 avg 831.83 weightsize 0.17
+save data
+Seed 16 (27.6%) gen 489 msteps 13 bestfit 1023.78 bestgfit 941.33 bestsam 986.49 avg 835.62 weightsize 0.17
+save data
+Seed 16 (28.0%) gen 490 msteps 14 bestfit 1029.98 bestgfit 941.33 bestsam 1029.98 avg 863.97 weightsize 0.17
+save data
+Seed 16 (28.4%) gen 491 msteps 14 bestfit 1078.39 bestgfit 941.33 bestsam 1078.39 avg 827.87 weightsize 0.17
+save data
+Seed 16 (28.7%) gen 492 msteps 14 bestfit 1078.39 bestgfit 941.33 bestsam 992.74 avg 826.91 weightsize 0.17
+save data
+Seed 16 (29.1%) gen 493 msteps 14 bestfit 1078.39 bestgfit 941.33 bestsam 1016.32 avg 810.41 weightsize 0.17
+save data
+Seed 16 (29.4%) gen 494 msteps 14 bestfit 1096.13 bestgfit 941.33 bestsam 1096.13 avg 812.46 weightsize 0.17
+save data
+Seed 16 (29.7%) gen 495 msteps 14 bestfit 1096.13 bestgfit 941.33 bestsam 1007.53 avg 745.97 weightsize 0.17
+actual_step = 30.0 %
+step_size = 10.0 %
+max_fitness_weight = 33.35
+avg_fitness_weight = 66.65
+min_fitness_weight = 0.0
+save data
+Seed 16 (30.1%) gen 496 msteps 15 bestfit 1096.13 bestgfit 941.33 bestsam 1050.41 avg 863.32 weightsize 0.17
+save data
+Seed 16 (30.4%) gen 497 msteps 15 bestfit 1096.13 bestgfit 941.33 bestsam 1038.52 avg 846.32 weightsize 0.17
+save data
+Seed 16 (30.8%) gen 498 msteps 15 bestfit 1096.13 bestgfit 941.33 bestsam 1052.92 avg 799.47 weightsize 0.17
+save data
+Seed 16 (31.1%) gen 499 msteps 15 bestfit 1096.35 bestgfit 941.33 bestsam 1096.35 avg 892.97 weightsize 0.17
+save data
+Seed 16 (31.5%) gen 500 msteps 15 bestfit 1096.35 bestgfit 1014.74 bestsam 1060.88 avg 858.27 weightsize 0.17
+save data
+Seed 16 (31.9%) gen 501 msteps 15 bestfit 1096.35 bestgfit 1014.74 bestsam 1074.38 avg 922.49 weightsize 0.17
+save data
+Seed 16 (32.3%) gen 502 msteps 16 bestfit 1096.35 bestgfit 1014.74 bestsam 1057.73 avg 934.83 weightsize 0.17
+save data
+Seed 16 (32.7%) gen 503 msteps 16 bestfit 1096.35 bestgfit 1014.74 bestsam 1075.41 avg 910.04 weightsize 0.17
+save data
+Seed 16 (33.1%) gen 504 msteps 16 bestfit 1096.35 bestgfit 1014.74 bestsam 1050.03 avg 925.01 weightsize 0.17
+save data
+Seed 16 (33.5%) gen 505 msteps 16 bestfit 1096.35 bestgfit 1049.66 bestsam 1075.60 avg 938.16 weightsize 0.17
+save data
+Seed 16 (33.9%) gen 506 msteps 16 bestfit 1100.24 bestgfit 1076.73 bestsam 1100.24 avg 957.35 weightsize 0.17
+save data
+Seed 16 (34.3%) gen 507 msteps 17 bestfit 1100.24 bestgfit 1076.73 bestsam 1067.67 avg 925.43 weightsize 0.17
+save data
+Seed 16 (34.7%) gen 508 msteps 17 bestfit 1109.84 bestgfit 1076.73 bestsam 1109.84 avg 924.89 weightsize 0.17
+save data
+Seed 16 (35.1%) gen 509 msteps 17 bestfit 1109.84 bestgfit 1076.73 bestsam 1098.78 avg 918.54 weightsize 0.17
+save data
+Seed 16 (35.5%) gen 510 msteps 17 bestfit 1109.84 bestgfit 1076.73 bestsam 1103.13 avg 939.04 weightsize 0.17
+save data
+Seed 16 (35.8%) gen 511 msteps 17 bestfit 1114.33 bestgfit 1098.93 bestsam 1114.33 avg 900.85 weightsize 0.17
+save data
+Seed 16 (36.2%) gen 512 msteps 18 bestfit 1138.26 bestgfit 1098.93 bestsam 1138.26 avg 886.46 weightsize 0.17
+save data
+Seed 16 (36.6%) gen 513 msteps 18 bestfit 1155.10 bestgfit 1098.93 bestsam 1155.10 avg 893.99 weightsize 0.17
+save data
+Seed 16 (37.0%) gen 514 msteps 18 bestfit 1155.10 bestgfit 1103.56 bestsam 1132.69 avg 943.23 weightsize 0.17
+save data
+Seed 16 (37.3%) gen 515 msteps 18 bestfit 1156.39 bestgfit 1103.56 bestsam 1156.39 avg 965.88 weightsize 0.17
+save data
+Seed 16 (37.7%) gen 516 msteps 18 bestfit 1158.12 bestgfit 1117.43 bestsam 1158.12 avg 908.84 weightsize 0.17
+save data
+Seed 16 (38.1%) gen 517 msteps 19 bestfit 1158.12 bestgfit 1117.43 bestsam 1148.85 avg 911.75 weightsize 0.17
+save data
+Seed 16 (38.4%) gen 518 msteps 19 bestfit 1158.12 bestgfit 1117.43 bestsam 1148.88 avg 910.46 weightsize 0.17
+save data
+Seed 16 (38.8%) gen 519 msteps 19 bestfit 1158.12 bestgfit 1117.43 bestsam 1155.81 avg 881.10 weightsize 0.17
+save data
+Seed 16 (39.2%) gen 520 msteps 19 bestfit 1179.70 bestgfit 1117.43 bestsam 1179.70 avg 943.51 weightsize 0.17
+save data
+Seed 16 (39.6%) gen 521 msteps 19 bestfit 1187.96 bestgfit 1117.43 bestsam 1187.96 avg 932.75 weightsize 0.17
+save data
+Seed 16 (40.0%) gen 522 msteps 19 bestfit 1187.96 bestgfit 1117.43 bestsam 1146.71 avg 918.78 weightsize 0.17
+actual_step = 40.0 %
+step_size = 10.0 %
+max_fitness_weight = 27.8
+avg_fitness_weight = 72.2
+min_fitness_weight = 0.0
+save data
+Seed 16 (40.3%) gen 523 msteps 20 bestfit 1187.96 bestgfit 1117.43 bestsam 1104.62 avg 892.06 weightsize 0.17
+save data
+Seed 16 (40.7%) gen 524 msteps 20 bestfit 1187.96 bestgfit 1117.43 bestsam 1111.85 avg 935.23 weightsize 0.17
+save data
+Seed 16 (41.1%) gen 525 msteps 20 bestfit 1187.96 bestgfit 1117.43 bestsam 1119.28 avg 927.28 weightsize 0.17
+save data
+Seed 16 (41.5%) gen 526 msteps 20 bestfit 1187.96 bestgfit 1117.43 bestsam 1139.63 avg 892.36 weightsize 0.17
+save data
+Seed 16 (41.9%) gen 527 msteps 20 bestfit 1187.96 bestgfit 1117.43 bestsam 1132.65 avg 959.45 weightsize 0.17
+save data
+Seed 16 (42.3%) gen 528 msteps 21 bestfit 1187.96 bestgfit 1117.43 bestsam 1157.28 avg 967.38 weightsize 0.17
+save data
+Seed 16 (42.7%) gen 529 msteps 21 bestfit 1188.95 bestgfit 1117.43 bestsam 1188.95 avg 954.40 weightsize 0.17
+save data
+Seed 16 (43.1%) gen 530 msteps 21 bestfit 1188.95 bestgfit 1117.43 bestsam 1177.76 avg 983.56 weightsize 0.17
+save data
+Seed 16 (43.5%) gen 531 msteps 21 bestfit 1201.82 bestgfit 1117.43 bestsam 1201.82 avg 1050.81 weightsize 0.17
+save data
+Seed 16 (43.9%) gen 532 msteps 21 bestfit 1213.92 bestgfit 1117.43 bestsam 1213.92 avg 972.31 weightsize 0.17
+save data
+Seed 16 (44.2%) gen 533 msteps 22 bestfit 1213.92 bestgfit 1117.43 bestsam 1173.53 avg 942.59 weightsize 0.17
+save data
+Seed 16 (44.6%) gen 534 msteps 22 bestfit 1213.92 bestgfit 1117.43 bestsam 1203.44 avg 973.10 weightsize 0.17
+save data
+Seed 16 (45.0%) gen 535 msteps 22 bestfit 1213.92 bestgfit 1128.38 bestsam 1177.91 avg 976.22 weightsize 0.17
+save data
+Seed 16 (45.4%) gen 536 msteps 22 bestfit 1213.92 bestgfit 1128.38 bestsam 1157.40 avg 948.02 weightsize 0.17
+save data
+Seed 16 (45.7%) gen 537 msteps 22 bestfit 1213.92 bestgfit 1128.38 bestsam 1171.97 avg 968.55 weightsize 0.17
+save data
+Seed 16 (46.1%) gen 538 msteps 23 bestfit 1213.92 bestgfit 1128.38 bestsam 1177.03 avg 948.52 weightsize 0.17
+save data
+Seed 16 (46.5%) gen 539 msteps 23 bestfit 1213.92 bestgfit 1128.38 bestsam 1152.64 avg 949.43 weightsize 0.17
+save data
+Seed 16 (46.9%) gen 540 msteps 23 bestfit 1213.92 bestgfit 1128.38 bestsam 1132.29 avg 968.80 weightsize 0.17
+save data
+Seed 16 (47.3%) gen 541 msteps 23 bestfit 1213.92 bestgfit 1128.38 bestsam 1144.36 avg 951.46 weightsize 0.17
+save data
+Seed 16 (47.7%) gen 542 msteps 23 bestfit 1213.92 bestgfit 1128.38 bestsam 1188.83 avg 991.30 weightsize 0.17
+save data
+Seed 16 (48.1%) gen 543 msteps 24 bestfit 1213.92 bestgfit 1128.38 bestsam 1153.21 avg 1001.77 weightsize 0.17
+save data
+Seed 16 (48.4%) gen 544 msteps 24 bestfit 1213.92 bestgfit 1128.38 bestsam 1155.51 avg 982.64 weightsize 0.17
+save data
+Seed 16 (48.8%) gen 545 msteps 24 bestfit 1213.92 bestgfit 1128.38 bestsam 1133.04 avg 974.71 weightsize 0.17
+save data
+Seed 16 (49.3%) gen 546 msteps 24 bestfit 1213.92 bestgfit 1128.38 bestsam 1157.24 avg 1020.30 weightsize 0.17
+save data
+Seed 16 (49.7%) gen 547 msteps 24 bestfit 1214.60 bestgfit 1128.38 bestsam 1214.60 avg 1024.91 weightsize 0.17
+actual_step = 50.0 %
+step_size = 10.0 %
+max_fitness_weight = 22.25
+avg_fitness_weight = 77.75
+min_fitness_weight = 0.0
+save data
+Seed 16 (50.1%) gen 548 msteps 25 bestfit 1214.60 bestgfit 1128.38 bestsam 1176.04 avg 1028.80 weightsize 0.17
+save data
+Seed 16 (50.5%) gen 549 msteps 25 bestfit 1214.60 bestgfit 1165.32 bestsam 1208.70 avg 1032.75 weightsize 0.17
+save data
+Seed 16 (50.9%) gen 550 msteps 25 bestfit 1214.60 bestgfit 1165.32 bestsam 1210.25 avg 1038.98 weightsize 0.17
+save data
+Seed 16 (51.3%) gen 551 msteps 25 bestfit 1214.60 bestgfit 1165.32 bestsam 1207.79 avg 1023.45 weightsize 0.17
+save data
+Seed 16 (51.7%) gen 552 msteps 25 bestfit 1228.11 bestgfit 1165.32 bestsam 1228.11 avg 1045.06 weightsize 0.17
+save data
+Seed 16 (52.1%) gen 553 msteps 26 bestfit 1228.11 bestgfit 1165.32 bestsam 1215.53 avg 1039.55 weightsize 0.17
+save data
+Seed 16 (52.5%) gen 554 msteps 26 bestfit 1228.11 bestgfit 1165.32 bestsam 1225.69 avg 1044.54 weightsize 0.17
+save data
+Seed 16 (52.9%) gen 555 msteps 26 bestfit 1234.12 bestgfit 1165.32 bestsam 1234.12 avg 1068.32 weightsize 0.17
+save data
+Seed 16 (53.3%) gen 556 msteps 26 bestfit 1237.12 bestgfit 1165.32 bestsam 1237.12 avg 1061.84 weightsize 0.17
+save data
+Seed 16 (53.7%) gen 557 msteps 26 bestfit 1241.05 bestgfit 1165.32 bestsam 1241.05 avg 1083.94 weightsize 0.17
+save data
+Seed 16 (54.1%) gen 558 msteps 27 bestfit 1241.05 bestgfit 1173.81 bestsam 1212.57 avg 1048.51 weightsize 0.17
+save data
+Seed 16 (54.5%) gen 559 msteps 27 bestfit 1241.05 bestgfit 1173.81 bestsam 1216.16 avg 1057.62 weightsize 0.17
+save data
+Seed 16 (54.9%) gen 560 msteps 27 bestfit 1263.25 bestgfit 1173.81 bestsam 1263.25 avg 1056.76 weightsize 0.17
+save data
+Seed 16 (55.3%) gen 561 msteps 27 bestfit 1263.25 bestgfit 1173.81 bestsam 1242.21 avg 1102.44 weightsize 0.17
+save data
+Seed 16 (55.7%) gen 562 msteps 27 bestfit 1263.25 bestgfit 1192.76 bestsam 1236.95 avg 1079.17 weightsize 0.17
+save data
+Seed 16 (56.1%) gen 563 msteps 28 bestfit 1281.71 bestgfit 1202.09 bestsam 1281.71 avg 1117.41 weightsize 0.17
+save data
+Seed 16 (56.5%) gen 564 msteps 28 bestfit 1281.71 bestgfit 1202.09 bestsam 1212.70 avg 1109.02 weightsize 0.17
+save data
+Seed 16 (56.9%) gen 565 msteps 28 bestfit 1284.60 bestgfit 1262.95 bestsam 1284.60 avg 1103.33 weightsize 0.17
+save data
+Seed 16 (57.3%) gen 566 msteps 28 bestfit 1284.60 bestgfit 1262.95 bestsam 1232.44 avg 1092.46 weightsize 0.17
+save data
+Seed 16 (57.8%) gen 567 msteps 28 bestfit 1287.13 bestgfit 1262.95 bestsam 1287.13 avg 1118.68 weightsize 0.17
+save data
+Seed 16 (58.2%) gen 568 msteps 29 bestfit 1287.13 bestgfit 1262.95 bestsam 1262.32 avg 1136.04 weightsize 0.17
+save data
+Seed 16 (58.6%) gen 569 msteps 29 bestfit 1287.13 bestgfit 1262.95 bestsam 1252.67 avg 1106.63 weightsize 0.17
+save data
+Seed 16 (59.0%) gen 570 msteps 29 bestfit 1287.13 bestgfit 1262.95 bestsam 1235.56 avg 1064.73 weightsize 0.17
+save data
+Seed 16 (59.4%) gen 571 msteps 29 bestfit 1287.13 bestgfit 1262.95 bestsam 1271.41 avg 1128.80 weightsize 0.17
+save data
+Seed 16 (59.8%) gen 572 msteps 29 bestfit 1287.13 bestgfit 1262.95 bestsam 1276.88 avg 1117.86 weightsize 0.17
+actual_step = 60.0 %
+step_size = 10.0 %
+max_fitness_weight = 16.7
+avg_fitness_weight = 83.3
+min_fitness_weight = 0.0
+save data
+Seed 16 (60.2%) gen 573 msteps 30 bestfit 1287.13 bestgfit 1262.95 bestsam 1226.90 avg 1088.12 weightsize 0.17
+save data
+Seed 16 (60.6%) gen 574 msteps 30 bestfit 1287.13 bestgfit 1262.95 bestsam 1259.17 avg 1085.46 weightsize 0.17
+save data
+Seed 16 (61.0%) gen 575 msteps 30 bestfit 1287.13 bestgfit 1262.95 bestsam 1226.15 avg 1070.33 weightsize 0.17
+save data
+Seed 16 (61.4%) gen 576 msteps 30 bestfit 1287.13 bestgfit 1262.95 bestsam 1241.48 avg 1064.71 weightsize 0.17
+save data
+Seed 16 (61.7%) gen 577 msteps 30 bestfit 1287.13 bestgfit 1262.95 bestsam 1253.35 avg 1060.62 weightsize 0.17
+save data
+Seed 16 (62.1%) gen 578 msteps 31 bestfit 1287.13 bestgfit 1262.95 bestsam 1204.03 avg 1080.77 weightsize 0.17
+save data
+Seed 16 (62.6%) gen 579 msteps 31 bestfit 1287.13 bestgfit 1262.95 bestsam 1253.86 avg 1078.03 weightsize 0.17
+save data
+Seed 16 (63.0%) gen 580 msteps 31 bestfit 1287.13 bestgfit 1262.95 bestsam 1233.07 avg 1068.89 weightsize 0.17
+save data
+Seed 16 (63.4%) gen 581 msteps 31 bestfit 1287.13 bestgfit 1262.95 bestsam 1254.23 avg 1134.51 weightsize 0.17
+save data
+Seed 16 (63.8%) gen 582 msteps 31 bestfit 1287.13 bestgfit 1262.95 bestsam 1210.76 avg 1026.36 weightsize 0.17
+save data
+Seed 16 (64.2%) gen 583 msteps 32 bestfit 1287.13 bestgfit 1262.95 bestsam 1211.69 avg 1066.40 weightsize 0.17
+save data
+Seed 16 (64.6%) gen 584 msteps 32 bestfit 1287.13 bestgfit 1262.95 bestsam 1251.87 avg 1092.12 weightsize 0.17
+save data
+Seed 16 (65.0%) gen 585 msteps 32 bestfit 1287.13 bestgfit 1262.95 bestsam 1209.34 avg 1031.21 weightsize 0.17
+save data
+Seed 16 (65.4%) gen 586 msteps 32 bestfit 1287.13 bestgfit 1262.95 bestsam 1181.54 avg 1063.27 weightsize 0.17
+save data
+Seed 16 (65.8%) gen 587 msteps 32 bestfit 1287.13 bestgfit 1262.95 bestsam 1237.98 avg 1080.39 weightsize 0.17
+save data
+Seed 16 (66.2%) gen 588 msteps 33 bestfit 1287.13 bestgfit 1262.95 bestsam 1228.44 avg 1076.38 weightsize 0.17
+save data
+Seed 16 (66.6%) gen 589 msteps 33 bestfit 1287.13 bestgfit 1262.95 bestsam 1223.11 avg 1106.87 weightsize 0.17
+save data
+Seed 16 (67.0%) gen 590 msteps 33 bestfit 1287.13 bestgfit 1262.95 bestsam 1280.60 avg 1053.06 weightsize 0.17
+save data
+Seed 16 (67.4%) gen 591 msteps 33 bestfit 1287.13 bestgfit 1262.95 bestsam 1252.12 avg 1091.10 weightsize 0.17
+save data
+Seed 16 (67.8%) gen 592 msteps 33 bestfit 1287.13 bestgfit 1262.95 bestsam 1238.17 avg 1091.22 weightsize 0.17
+save data
+Seed 16 (68.2%) gen 593 msteps 34 bestfit 1287.13 bestgfit 1262.95 bestsam 1282.05 avg 1094.13 weightsize 0.17
+save data
+Seed 16 (68.6%) gen 594 msteps 34 bestfit 1314.62 bestgfit 1276.01 bestsam 1314.62 avg 1127.05 weightsize 0.17
+save data
+Seed 16 (69.0%) gen 595 msteps 34 bestfit 1314.62 bestgfit 1276.01 bestsam 1249.82 avg 1033.35 weightsize 0.17
+save data
+Seed 16 (69.4%) gen 596 msteps 34 bestfit 1314.62 bestgfit 1276.01 bestsam 1276.87 avg 1046.10 weightsize 0.17
+save data
+Seed 16 (69.8%) gen 597 msteps 34 bestfit 1314.62 bestgfit 1276.01 bestsam 1242.21 avg 1073.63 weightsize 0.17
+actual_step = 70.0 %
+step_size = 10.0 %
+max_fitness_weight = 11.15
+avg_fitness_weight = 88.85
+min_fitness_weight = 0.0
+save data
+Seed 16 (70.2%) gen 598 msteps 35 bestfit 1314.62 bestgfit 1276.01 bestsam 1247.74 avg 1097.33 weightsize 0.17
+save data
+Seed 16 (70.6%) gen 599 msteps 35 bestfit 1314.62 bestgfit 1276.01 bestsam 1197.63 avg 1041.06 weightsize 0.17
+save data
+Seed 16 (71.0%) gen 600 msteps 35 bestfit 1314.62 bestgfit 1276.01 bestsam 1241.07 avg 1092.57 weightsize 0.17
+save data
+Seed 16 (71.4%) gen 601 msteps 35 bestfit 1314.62 bestgfit 1276.01 bestsam 1229.37 avg 1110.31 weightsize 0.17
+save data
+Seed 16 (71.8%) gen 602 msteps 35 bestfit 1314.62 bestgfit 1276.01 bestsam 1278.89 avg 1091.79 weightsize 0.17
+save data
+Seed 16 (72.3%) gen 603 msteps 36 bestfit 1314.62 bestgfit 1276.01 bestsam 1297.18 avg 1088.20 weightsize 0.17
+save data
+Seed 16 (72.7%) gen 604 msteps 36 bestfit 1314.62 bestgfit 1276.01 bestsam 1277.77 avg 1099.19 weightsize 0.17
+save data
+Seed 16 (73.1%) gen 605 msteps 36 bestfit 1314.62 bestgfit 1276.01 bestsam 1259.65 avg 1102.66 weightsize 0.17
+save data
+Seed 16 (73.5%) gen 606 msteps 36 bestfit 1314.62 bestgfit 1276.01 bestsam 1286.48 avg 1110.43 weightsize 0.17
+save data
+Seed 16 (73.9%) gen 607 msteps 36 bestfit 1314.62 bestgfit 1276.01 bestsam 1268.85 avg 1095.95 weightsize 0.17
+save data
+Seed 16 (74.3%) gen 608 msteps 37 bestfit 1314.62 bestgfit 1276.01 bestsam 1285.26 avg 1140.06 weightsize 0.17
+save data
+Seed 16 (74.7%) gen 609 msteps 37 bestfit 1314.62 bestgfit 1276.01 bestsam 1265.84 avg 1122.82 weightsize 0.17
+save data
+Seed 16 (75.1%) gen 610 msteps 37 bestfit 1314.62 bestgfit 1276.01 bestsam 1285.85 avg 1090.43 weightsize 0.17
+save data
+Seed 16 (75.5%) gen 611 msteps 37 bestfit 1314.62 bestgfit 1276.01 bestsam 1247.95 avg 1045.77 weightsize 0.17
+save data
+Seed 16 (76.0%) gen 612 msteps 37 bestfit 1314.62 bestgfit 1276.01 bestsam 1265.62 avg 1141.59 weightsize 0.17
+save data
+Seed 16 (76.4%) gen 613 msteps 38 bestfit 1314.62 bestgfit 1276.01 bestsam 1286.29 avg 1140.60 weightsize 0.17
+save data
+Seed 16 (76.8%) gen 614 msteps 38 bestfit 1314.62 bestgfit 1276.01 bestsam 1291.34 avg 1101.10 weightsize 0.17
+save data
+Seed 16 (77.2%) gen 615 msteps 38 bestfit 1314.62 bestgfit 1276.01 bestsam 1301.62 avg 1168.42 weightsize 0.17
+save data
+Seed 16 (77.6%) gen 616 msteps 38 bestfit 1314.62 bestgfit 1276.01 bestsam 1280.46 avg 1142.88 weightsize 0.17
+save data
+Seed 16 (78.0%) gen 617 msteps 39 bestfit 1314.62 bestgfit 1276.01 bestsam 1294.09 avg 1177.15 weightsize 0.17
+save data
+Seed 16 (78.4%) gen 618 msteps 39 bestfit 1314.62 bestgfit 1276.01 bestsam 1292.64 avg 1130.35 weightsize 0.17
+save data
+Seed 16 (78.9%) gen 619 msteps 39 bestfit 1336.31 bestgfit 1276.01 bestsam 1336.31 avg 1189.68 weightsize 0.17
+save data
+Seed 16 (79.3%) gen 620 msteps 39 bestfit 1336.31 bestgfit 1278.44 bestsam 1313.46 avg 1171.47 weightsize 0.17
+save data
+Seed 16 (79.7%) gen 621 msteps 39 bestfit 1347.45 bestgfit 1278.44 bestsam 1347.45 avg 1158.54 weightsize 0.17
+actual_step = 80.0 %
+step_size = 10.0 %
+max_fitness_weight = 5.6
+avg_fitness_weight = 94.4
+min_fitness_weight = 0.0
+save data
+Seed 16 (80.1%) gen 622 msteps 40 bestfit 1347.45 bestgfit 1278.44 bestsam 1323.66 avg 1095.00 weightsize 0.17
+save data
+Seed 16 (80.5%) gen 623 msteps 40 bestfit 1347.45 bestgfit 1299.71 bestsam 1298.89 avg 1138.86 weightsize 0.17
+save data
+Seed 16 (80.9%) gen 624 msteps 40 bestfit 1347.45 bestgfit 1299.71 bestsam 1312.39 avg 1165.96 weightsize 0.17
+save data
+Seed 16 (81.3%) gen 625 msteps 40 bestfit 1347.45 bestgfit 1299.71 bestsam 1304.90 avg 1119.72 weightsize 0.17
+save data
+Seed 16 (81.7%) gen 626 msteps 40 bestfit 1347.45 bestgfit 1299.71 bestsam 1319.71 avg 1116.11 weightsize 0.17
+save data
+Seed 16 (82.1%) gen 627 msteps 41 bestfit 1347.45 bestgfit 1299.71 bestsam 1306.27 avg 1132.18 weightsize 0.17
+save data
+Seed 16 (82.6%) gen 628 msteps 41 bestfit 1347.45 bestgfit 1299.71 bestsam 1333.00 avg 1136.61 weightsize 0.17
+save data
+Seed 16 (83.0%) gen 629 msteps 41 bestfit 1347.45 bestgfit 1299.71 bestsam 1325.68 avg 1129.70 weightsize 0.17
+save data
+Seed 16 (83.4%) gen 630 msteps 41 bestfit 1347.45 bestgfit 1299.71 bestsam 1294.08 avg 1141.39 weightsize 0.17
+save data
+Seed 16 (83.8%) gen 631 msteps 41 bestfit 1347.45 bestgfit 1299.71 bestsam 1292.21 avg 1165.14 weightsize 0.17
+save data
+Seed 16 (84.2%) gen 632 msteps 42 bestfit 1347.45 bestgfit 1299.71 bestsam 1301.73 avg 1114.42 weightsize 0.17
+save data
+Seed 16 (84.6%) gen 633 msteps 42 bestfit 1347.45 bestgfit 1299.71 bestsam 1330.34 avg 1144.90 weightsize 0.17
+save data
+Seed 16 (85.1%) gen 634 msteps 42 bestfit 1347.45 bestgfit 1299.71 bestsam 1307.95 avg 1173.08 weightsize 0.17
+save data
+Seed 16 (85.5%) gen 635 msteps 42 bestfit 1347.45 bestgfit 1299.71 bestsam 1326.89 avg 1177.58 weightsize 0.17
+save data
+Seed 16 (85.9%) gen 636 msteps 42 bestfit 1347.45 bestgfit 1299.71 bestsam 1295.03 avg 1156.56 weightsize 0.17
+save data
+Seed 16 (86.3%) gen 637 msteps 43 bestfit 1347.45 bestgfit 1299.71 bestsam 1333.44 avg 1130.53 weightsize 0.17
+save data
+Seed 16 (86.7%) gen 638 msteps 43 bestfit 1348.07 bestgfit 1299.71 bestsam 1348.07 avg 1071.89 weightsize 0.17
+save data
+Seed 16 (87.1%) gen 639 msteps 43 bestfit 1348.07 bestgfit 1299.71 bestsam 1334.06 avg 1071.42 weightsize 0.17
+save data
+Seed 16 (87.5%) gen 640 msteps 43 bestfit 1348.07 bestgfit 1299.71 bestsam 1299.76 avg 1117.21 weightsize 0.17
+save data
+Seed 16 (87.9%) gen 641 msteps 43 bestfit 1348.07 bestgfit 1299.71 bestsam 1298.47 avg 1009.11 weightsize 0.17
+save data
+Seed 16 (88.3%) gen 642 msteps 44 bestfit 1348.07 bestgfit 1299.71 bestsam 1311.17 avg 1079.01 weightsize 0.17
+save data
+Seed 16 (88.7%) gen 643 msteps 44 bestfit 1348.07 bestgfit 1299.71 bestsam 1277.95 avg 1054.54 weightsize 0.17
+save data
+Seed 16 (89.1%) gen 644 msteps 44 bestfit 1348.07 bestgfit 1299.71 bestsam 1304.49 avg 1064.05 weightsize 0.17
+save data
+Seed 16 (89.5%) gen 645 msteps 44 bestfit 1348.07 bestgfit 1350.27 bestsam 1323.80 avg 1062.86 weightsize 0.17
+save data
+Seed 16 (89.9%) gen 646 msteps 44 bestfit 1348.07 bestgfit 1350.27 bestsam 1288.50 avg 1113.14 weightsize 0.17
+actual_step = 90.0 %
+step_size = 10.0 %
+max_fitness_weight = 0.05
+avg_fitness_weight = 99.95
+min_fitness_weight = 0.0
+save data
+Seed 16 (90.4%) gen 647 msteps 45 bestfit 1348.07 bestgfit 1350.27 bestsam 1287.59 avg 1133.64 weightsize 0.17
+save data
+Seed 16 (90.8%) gen 648 msteps 45 bestfit 1348.07 bestgfit 1350.27 bestsam 1334.66 avg 1052.98 weightsize 0.17
+save data
+Seed 16 (91.2%) gen 649 msteps 45 bestfit 1348.07 bestgfit 1350.27 bestsam 1310.07 avg 1012.06 weightsize 0.17
+save data
+Seed 16 (91.6%) gen 650 msteps 45 bestfit 1348.07 bestgfit 1350.27 bestsam 1291.66 avg 1071.24 weightsize 0.17
+save data
+Seed 16 (92.0%) gen 651 msteps 46 bestfit 1348.07 bestgfit 1350.27 bestsam 1291.38 avg 1100.61 weightsize 0.17
+save data
+Seed 16 (92.4%) gen 652 msteps 46 bestfit 1348.07 bestgfit 1350.27 bestsam 1287.37 avg 1151.14 weightsize 0.17
+save data
+Seed 16 (92.8%) gen 653 msteps 46 bestfit 1348.07 bestgfit 1350.27 bestsam 1309.37 avg 1170.81 weightsize 0.17
+save data
+Seed 16 (93.3%) gen 654 msteps 46 bestfit 1348.07 bestgfit 1350.27 bestsam 1309.03 avg 1099.52 weightsize 0.17
+save data
+Seed 16 (93.7%) gen 655 msteps 46 bestfit 1348.07 bestgfit 1350.27 bestsam 1313.30 avg 1135.72 weightsize 0.17
+save data
+Seed 16 (94.1%) gen 656 msteps 47 bestfit 1348.07 bestgfit 1350.27 bestsam 1290.45 avg 1128.30 weightsize 0.17
+save data
+Seed 16 (94.5%) gen 657 msteps 47 bestfit 1348.07 bestgfit 1350.27 bestsam 1314.72 avg 1001.63 weightsize 0.17
+save data
+Seed 16 (94.9%) gen 658 msteps 47 bestfit 1348.07 bestgfit 1350.27 bestsam 1307.84 avg 1155.08 weightsize 0.17
+save data
+Seed 16 (95.3%) gen 659 msteps 47 bestfit 1348.07 bestgfit 1350.27 bestsam 1320.24 avg 1025.35 weightsize 0.17
+save data
+Seed 16 (95.8%) gen 660 msteps 47 bestfit 1348.07 bestgfit 1350.27 bestsam 1293.79 avg 1141.07 weightsize 0.17
+save data
+Seed 16 (96.2%) gen 661 msteps 48 bestfit 1348.07 bestgfit 1350.27 bestsam 1298.50 avg 1089.41 weightsize 0.17
+save data
+Seed 16 (96.6%) gen 662 msteps 48 bestfit 1348.07 bestgfit 1350.27 bestsam 1305.78 avg 1134.38 weightsize 0.17
+save data
+Seed 16 (97.0%) gen 663 msteps 48 bestfit 1348.07 bestgfit 1350.27 bestsam 1311.70 avg 1065.45 weightsize 0.17
+save data
+Seed 16 (97.4%) gen 664 msteps 48 bestfit 1348.07 bestgfit 1350.27 bestsam 1284.00 avg 1151.95 weightsize 0.17
+save data
+Seed 16 (97.8%) gen 665 msteps 48 bestfit 1348.07 bestgfit 1350.27 bestsam 1329.16 avg 1134.90 weightsize 0.17
+save data
+Seed 16 (98.3%) gen 666 msteps 49 bestfit 1348.07 bestgfit 1350.27 bestsam 1287.85 avg 1121.68 weightsize 0.17
+save data
+Seed 16 (98.7%) gen 667 msteps 49 bestfit 1348.07 bestgfit 1350.27 bestsam 1317.30 avg 1190.07 weightsize 0.17
+save data
+Seed 16 (99.1%) gen 668 msteps 49 bestfit 1348.07 bestgfit 1350.27 bestsam 1277.61 avg 1140.76 weightsize 0.17
+save data
+Seed 16 (99.5%) gen 669 msteps 49 bestfit 1348.07 bestgfit 1350.27 bestsam 1303.86 avg 1168.40 weightsize 0.17
+save data
+Seed 16 (99.9%) gen 670 msteps 49 bestfit 1348.07 bestgfit 1350.27 bestsam 1303.01 avg 1141.67 weightsize 0.17
+actual_step = 100.0 %
+step_size = 10.0 %
+max_fitness_weight = 0.05
+avg_fitness_weight = 99.95
+min_fitness_weight = 0.0
+save data
+Seed 16 (100.3%) gen 671 msteps 50 bestfit 1348.07 bestgfit 1350.27 bestsam 1334.45 avg 1148.97 weightsize 0.17
+save data
+Simulation time: 6586m9s 
