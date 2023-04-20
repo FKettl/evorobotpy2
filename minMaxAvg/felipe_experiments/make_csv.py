@@ -7,7 +7,7 @@ import numpy as np
 e_folder = '../felipe_experiments/done_experiments'
 
 '''how many seeds do you want to run for each experiment?'''
-number_of_seeds = 10
+number_of_seeds = 20
 
 '''seed initial number'''
 initial_seed_number = 1
@@ -27,7 +27,7 @@ total_of_processes = number_of_experiments * int(number_of_seeds)
 header = ['Seed', 'Gen', 'Msteps', 'Bestfit', 'Bestgfit', 'Bestsam', 'Avgfit', 'Paramsize', 'Experiment']
 
 for i in e_list:
-    file = open(f'./results2/{i}.csv', 'w')
+    file = open(f'./results/{i}.csv', 'w')
     writer = csv.writer(file)
     writer.writerow(header)
     seed=initial_seed_number
